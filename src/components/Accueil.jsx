@@ -1,27 +1,12 @@
 import React from "react";
-import "./home.css";
-import logo from "../assets/images/logo-removebg-preview (1).png";
+import './home.css';
+import { Link } from "react-router-dom";
 
-import image1 from "../assets/images/seo-tips-for-fashion-e-commerce-website.webp";
-import image2 from "../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp";
-import image3 from "../assets/images/seo-tips-for-fashion-e-commerce-website.webp";
-import image4 from "../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp";
-import image5 from "../assets/images/seo-tips-for-fashion-e-commerce-website.webp";
-import image6 from "../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp";
-import image7 from "../assets/images/seo-tips-for-fashion-e-commerce-website.webp";
-import image8 from "../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp";
-import image9 from "../assets/images/seo-tips-for-fashion-e-commerce-website.webp";
-import image10 from "../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp";
-import image11 from "../assets/images/seo-tips-for-fashion-e-commerce-website.webp";
-import image12 from "../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp";
-import image13 from "../assets/images/seo-tips-for-fashion-e-commerce-website.webp";
-import image14 from "../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp";
-import image15 from "../assets/images/seo-tips-for-fashion-e-commerce-website.webp";
-import image16 from "../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp";
-import image17 from "../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp";
-import image18 from "../assets/images/seo-tips-for-fashion-e-commerce-website.webp";
-import image19 from "../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp";
-// importe les autres images aussi si besoin
+import logo from "../assets/images/logo-removebg-preview (1).png";
+ import image3 from "../assets/images/girl1-a91d48b4.png";
+ import image4 from "../assets/images/girl2-47d9e9b0.png";
+ import image5 from "../assets/images/girl3-40737473.png";
+import image6 from "../assets/images/girl4-a8b3d73f.png";
 
 function Accueil() {
   return (
@@ -45,23 +30,15 @@ function Accueil() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto me-5 nav1">
               <li className="nav-item">
-                <a
-                  className="nav-link active fs-5"
-                  aria-current="page"
-                  href="./Accueil.jsx"
-                >
-                  Home
-                </a>
+                 <Link className="nav-link active fs-5" to="/">Accueil</Link>
+                
               </li>
               <li className="nav-item">
-                <a className="nav-link fs-5" href="./Blog.jsx">
-                  Blog
-                </a>
+               <Link className="nav-link fs-5" to="/blog">Blog</Link>
+
               </li>
               <li className="nav-item">
-                <a className="nav-link fs-5" href="./Categories.jsx">
-                  Categories
-                </a>
+                <Link className="nav-link fs-5" to="categorie/">Categorie</Link>
               </li>
             </ul>
           </div>
@@ -88,7 +65,7 @@ function Accueil() {
           className="carousel slide  "
           data-bs-ride="carousel"
         >
-          <div className="carousel-inner py-5 mt-5">
+          <div className="carousel-inner ">
             <div
               className="carousel-item  text-center  vh-100 slide-1 active"
               data-bs-interval="10000"
@@ -101,7 +78,7 @@ function Accueil() {
                     </h1>
                     <a
                       href="#"
-                      className="btn btn-navbar rounded-pill bouton-acc px-5  py-2 bg-dark fs-4 text-white "
+                      className="btn btn-navbar rounded-pill bouton-acc  px-4  bg-dark fs-4 text-white "
                     >
                       Explore collections
                     </a>
@@ -110,7 +87,7 @@ function Accueil() {
               </div>
             </div>
             <div
-              className="carousel-item   text-center  slide-2  vh-100"
+              className="carousel-item  text-center  slide-2  vh-100"
               data-bs-interval="2000"
             >
               <div className="container  h-100 d-flex align-items-center justify-content-center">
@@ -121,7 +98,7 @@ function Accueil() {
                     </h1>
                     <a
                       href="#"
-                      className="btn btn-navbar rounded-pill bouton-acc px-5  py-2 bg-dark fs-4 text-white"
+                      className="btn btn-navbar rounded-pill bouton-acc px-4  bg-dark fs-4 text-white"
                     >
                       Explore collections
                     </a>
@@ -247,14 +224,14 @@ function Accueil() {
               id="pills-Starters"
               role="tabpanel"
               aria-labelledby="pills-Starters-tab"
-              tabindex="0"
+              tabIndex={0}
             >
               <div className="container">
                 <div className="row row-cols-1 row-cols-md-4 g-5">
                   <div className="col">
                     <div className="justify-content-center">
                       <img
-                        src="Images/girl1-a91d48b4.png"
+                        src= {image3}
                         alt=""
                         className="image-menu "
                       />
@@ -268,7 +245,7 @@ function Accueil() {
                   </div>
                   <div className="col">
                     <img
-                      src="Images/girl2-47d9e9b0.png"
+                      src={image4}
                       alt=""
                       className="image-menu img-fluid"
                     />
@@ -281,7 +258,7 @@ function Accueil() {
                   </div>
                   <div className="col">
                     <img
-                      src="Images/girl3-40737473.png"
+                      src={image5}
                       alt=" "
                       className="image-menu img-fluid"
                     />
@@ -294,7 +271,8 @@ function Accueil() {
                   </div>
                   <div className="col">
                     <img
-                      src="Images/girl3-40737473.png"
+                        src={image6}
+
                       alt=" "
                       className="image-menu img-fluid"
                     />
@@ -311,7 +289,7 @@ function Accueil() {
               id="pills-Breakfast"
               role="tabpanel"
               aria-labelledby="pills-Breakfast-tab"
-              tabindex="0"
+              tabIndex={0}
             >
               <div className="container">
                 <div className="row row-cols-2 justify-content-center row-cols-md-4 g-5 ">
@@ -375,8 +353,7 @@ function Accueil() {
               id="pills-Lunch"
               role="tabpanel"
               aria-labelledby="pills-Lunch-tab"
-              tabindex="0"
-            >
+              tabIndex={0}>
               <div className="container ">
                 <div className="row row-cols-2 row-cols-md-4 g-5 ">
                   <div className="col">
@@ -439,7 +416,7 @@ function Accueil() {
               id="pills-Dinner"
               role="tabpanel"
               aria-labelledby="pills-Dinner-tab"
-              tabindex="0"
+              tabIndex={0}
             >
               <div className="container ">
                 <div className="row row-cols-2 row-cols-md-4 g-5 ">
@@ -503,7 +480,7 @@ function Accueil() {
               id="pills-Dinner"
               role="tabpanel"
               aria-labelledby="pills-Dinner-tab"
-              tabindex="0"
+             tabIndex={0}
             >
               <div className="container ">
                 <div className="row row-cols-2 row-cols-md-4 g-5 ">
@@ -617,7 +594,7 @@ function Accueil() {
               </p>
             </div>
             <div className="col-auto">
-              <p className="m-0" style="letter-spacing: 0.4rem;">
+             <p className="m-0" style={{ letterSpacing: "0.4rem" }}>
                 <img
                   src="Images/gucci-logo-png_seeklogo-64069.png"
                   alt=""
@@ -677,7 +654,7 @@ function Accueil() {
           <div className="row justify-content-center">
             <div className="col-md-10 col-lg-8 position-relative">
               <img
-                src="Images/accuiel-collect1.jpg"
+                src="assets/images/accuiel-collect1.jpg"
                 className="img-fluid w-100 rounded"
                 alt="Video Preview"
               />
@@ -698,13 +675,13 @@ function Accueil() {
         <div
           className="modal fade"
           id="videoModal"
-          tabindex="-1"
+          tabIndex={-1}
           aria-hidden="true"
         >
           <div className="modal-dialog modal-dialog-centered modal-lg">
             <div className="modal-content bg-dark border-0">
               <div className="modal-body p-0">
-                <video controls autoplay className="w-100">
+                <video controls autoPlay className="w-100">
                   <source src="chemin/vers/ta-video.mp4" type="video/mp4" />
                   Votre navigateur ne prend pas en charge la lecture vidéo.
                 </video>
@@ -756,7 +733,7 @@ function Accueil() {
                   <div className="col">
                     <div className="">
                       <img
-                        src="./Images/girl2-47d9e9b0.png"
+                        src="i/girl2-47d9e9b0.png"
                         className="imgs img-fluid"
                         alt="..."
                       />
@@ -772,7 +749,7 @@ function Accueil() {
                   <div className="col">
                     <div className="">
                       <img
-                        src="./Images/girl1-a91d48b4.png"
+                        src="i/girl1-a91d48b4.png"
                         className="imgs img-fluid"
                         alt="..."
                       />
@@ -788,7 +765,7 @@ function Accueil() {
                   <div className="col">
                     <div className="">
                       <img
-                        src="./Images/girl2-47d9e9b0.png"
+                        src="i/girl2-47d9e9b0.png"
                         className="imgs img-fluid"
                         alt="..."
                       />
@@ -804,7 +781,7 @@ function Accueil() {
                   <div className="col">
                     <div className="">
                       <img
-                        src="./Images/girl3-40737473.png"
+                        src="i/girl3-40737473.png"
                         className="imgs img-fluid"
                         alt="..."
                       />
@@ -825,7 +802,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="./Images/girl2-47d9e9b0.png"
+                      src="i/girl2-47d9e9b0.png"
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -841,7 +818,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="./Images/girl4-a8b3d73f.png"
+                      src="i/girl4-a8b3d73f.png"
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -857,7 +834,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="./Images/girl2-47d9e9b0.png"
+                      src="i/girl2-47d9e9b0.png"
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -873,7 +850,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="./Images/girl1-a91d48b4.png"
+                      src="i/girl1-a91d48b4.png"
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -893,7 +870,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="./Images/girl4-a8b3d73f.png"
+                      src="assets/images/girl4-a8b3d73f.png"
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -909,7 +886,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="./Images/girl2-47d9e9b0.png"
+                      src="i/girl2-47d9e9b0.png"
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -925,7 +902,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="./Images/girl1-a91d48b4.png"
+                      src="i/girl1-a91d48b4.png"
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -941,7 +918,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="./Images/girl2-47d9e9b0.png"
+                      src="i/girl2-47d9e9b0.png"
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -979,7 +956,7 @@ function Accueil() {
           </div>
           <div className="container mt-5  ">
             <div className="row mt-5  g-5">
-              <div className="col col-sm-3 g row-cols-md-2 btn btn-light rounded-5 ">
+              <div className="col col-sm-3 g row-cols-md-2 btn btn-light rounded-5  ">
                 #2021{" "}
               </div>
               <div className="col col-sm-3 row-cols-md-2 btn btn-light rounded-5">
@@ -1008,11 +985,7 @@ function Accueil() {
       <section className="container trend mb-5 my-5">
         <div className="my-5">
           <div className="d-flex justify-content-center">
-            <img
-              src="./Images/logo-removebg-preview (1).png"
-              className="log"
-              alt=""
-            />
+            <img src={logo} className="log" alt=""/>
           </div>
           <h5 className="text-center">
             Making a luxurious lifestyle accessible for a generous group of
@@ -1075,19 +1048,19 @@ function Accueil() {
         <div className="container mb-5">
           <div className="row mt-5 row-cols-2 row-cols-md-4 g-5">
             <div className="col">
-              <img src="./Images/bw1.jpg" className="img-fluid low " alt="" />
+              <img src="assets/images/bw1.jpg" className="img-fluid low " alt="" />
               <p className="position-absolute mi text-light">@mia</p>
             </div>
             <div className="col">
-              <img src="./Images/bw2.jpeg" className="img-fluid low" alt="" />
+              <img src="assets/images/bw2.jpeg" className="img-fluid low" alt="" />
               <p className="position-absolute mi text-light">@_jihyn</p>
             </div>
             <div className="col">
-              <img src="./Images/bw3.jpeg" className="img-fluid low" alt="" />
+              <img src="assets/images/bw3.jpeg" className="img-fluid low" alt="" />
               <p className="position-absolute mi text-light">@mia</p>
             </div>
             <div className="col">
-              <img src="./Images/bw4.jpg" className="img-fluid low" alt="" />
+              <img src="assets/images/bw4.jpg" className="img-fluid low" alt="" />
               <p className="position-absolute mi text-light">@_jihyn</p>
             </div>
           </div>

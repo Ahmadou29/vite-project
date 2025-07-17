@@ -7,24 +7,25 @@
 }
 /* SLIDE1 */
 .slide-1{
-background: url("assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp") ;
+background: url("../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp") ;
 background-size: cover;
  background-repeat: no-repeat;
- background-position: center;
+ /* background-position: center; */
 
 
 } 
  .slide-2{
-    background: url("assets/images/seo-tips-for-fashion-e-commerce-website.webp") ;
+    background: url("../assets/images/seo-tips-for-fashion-e-commerce-website.webp") ;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;   
+    /* background-position: center;    */
+    width: 100%;
 } 
 .bouton-acc{
     opacity: 0.6;
 }
     /* button scoll */
-.avant, .apres{
+.carousel-control-prev, .carousel-control-nex{
     background-color: rgb(27, 17, 17);
     width: 70px;
     height: 70px;
