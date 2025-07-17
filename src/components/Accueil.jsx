@@ -30,7 +30,7 @@ function Accueil() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto me-5 nav1">
               <li className="nav-item">
-                 <Link className="nav-link active fs-5" to="/">Accueil</Link>
+                 <Link className="nav-link active fs-5" to="/">Home</Link>
                 
               </li>
               <li className="nav-item">
