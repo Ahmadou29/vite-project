@@ -1,15 +1,15 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
-// function App() {
+function App() {
 
-//   return (
-//     <>
-//     <Routes>
+  return (
+    <>
+    <Routes>
         
-//     </Routes>
-//     </>
-//   );
-// }
+    </Routes>
+    </>
+  );
+}
 
-// export default App;
+export default App;
