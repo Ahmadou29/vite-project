@@ -7,6 +7,12 @@ import logo from "../assets/images/logo-removebg-preview (1).png";
  import image4 from "../assets/images/girl2-47d9e9b0.png";
  import image5 from "../assets/images/girl3-40737473.png";
 import image6 from "../assets/images/girl4-a8b3d73f.png";
+// import image7 from "../assets/images/girl4-a8b3d73f.png";
+// import image8 from "../assets/images/girl4-a8b3d73f.png";
+// import image9 from "../assets/images/girl4-a8b3d73f.png";
+// import image10 from "../assets/images/girl4-a8b3d73f.png";
+// import image11 from "../assets/images/girl4-a8b3d73f.png";
+// import image12 from "../assets/images/girl4-a8b3d73f.png";
 
 function Accueil() {
   return (
@@ -67,7 +73,7 @@ function Accueil() {
         >
           <div className="carousel-inner ">
             <div
-              className="carousel-item  text-center  vh-100 slide-1 active"
+              className="carousel-item  text-center  vh-100 slide-1 active w-100"
               data-bs-interval="10000"
             >
               <div className="container  h-100 d-flex align-items-center justify-content-center">
@@ -87,7 +93,7 @@ function Accueil() {
               </div>
             </div>
             <div
-              className="carousel-item  text-center  slide-2  vh-100"
+              className="carousel-item  text-center  slide-2  vh-100 w-100"
               data-bs-interval="2000"
             >
               <div className="container  h-100 d-flex align-items-center justify-content-center">
