@@ -1,17 +1,19 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Categorie from './components/Categorie';
-import access1 from "./assets/image/kids-accessories-gallery/access1.jpg";
-import access2 from "./assets/image/kids-accessories-gallery/access2.jpg";
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
 
   return (
     <>
 
+ <Navbar />
     <Categorie />
+ <Footer />   
     </>
-   
+  
   );
 }
 
