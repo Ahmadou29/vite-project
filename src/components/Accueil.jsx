@@ -3,17 +3,62 @@ import './home.css';
 import { Link } from "react-router-dom";
 
 import logo from "../assets/images/logo-removebg-preview (1).png";
- import image3 from "../assets/images/girl1-a91d48b4.png";
- import image4 from "../assets/images/girl2-47d9e9b0.png";
- import image5 from "../assets/images/girl3-40737473.png";
-import image6 from "../assets/images/girl4-a8b3d73f.png";
+//  import image3 from "../assets/images/girl1-a91d48b4.png";
+//  import image4 from "../assets/images/girl2-47d9e9b0.png";
+//  import image5 from "../assets/images/girl3-40737473.png";
+// import image6 from "../assets/images/girl4-a8b3d73f.png";
 // import image7 from "../assets/images/girl4-a8b3d73f.png";
 // import image8 from "../assets/images/girl4-a8b3d73f.png";
 // import image9 from "../assets/images/girl4-a8b3d73f.png";
 // import image10 from "../assets/images/girl4-a8b3d73f.png";
 // import image11 from "../assets/images/girl4-a8b3d73f.png";
 // import image12 from "../assets/images/girl4-a8b3d73f.png";
-
+// import image13 from "../assets/images/girl4-a8b3d73f.png";
+// import image14 from "../assets/images/girl4-a8b3d73f.png";
+// import image15 from "../assets/images/girl4-a8b3d73f.png";
+// import image16 from "../assets/images/girl4-a8b3d73f.png";
+// import image17 from "../assets/images/girl4-a8b3d73f.png";
+// import image18 from "../assets/images/girl4-a8b3d73f.png";
+// import image19 from "../assets/images/girl4-a8b3d73f.png";
+// import image20 from "../assets/images/girl4-a8b3d73f.png";
+// import image21 from "../assets/images/girl4-a8b3d73f.png";
+// import image22 from "../assets/images/girl4-a8b3d73f.png";
+// import image23 from "../assets/images/girl4-a8b3d73f.png";
+// import image24 from "../assets/images/girl4-a8b3d73f.png";
+// import image25 from "../assets/images/girl4-a8b3d73f.png";
+// import image26 from "../assets/images/girl4-a8b3d73f.png";
+// import image27 from "../assets/images/girl4-a8b3d73f.png";
+// import image28 from "../assets/images/girl4-a8b3d73f.png";
+  import girl1 from "../assets/images/girl1-a91d48b4.png";
+import girl2 from "../assets/images/girl2-47d9e9b0.png";
+import girl3 from "../assets/images/girl3-40737473.png";
+import prada from "../assets/images/prada-logo-black-and-white.png";
+import capture from "../assets/images/875-875-capture-d-e-cran-2018-08-03-a-13-18-47_c048605b21956f554a2635e60998754f.png";
+import boss from "../assets/images/boss-hugo-boss-logo-svg-vector.svg";
+import cartier from "../assets/images/cartier-2-logo-png-transparent.png";
+import gucci from "../assets/images/gucci-logo-png_seeklogo-64069.png";
+import tiffany from "../assets/images/tiffany-co-logo-png-transparent.png";
+import collect1 from "../assets/images/accuiel-collect1.jpg";
+import collect2 from "../assets/images/accuiel-collect2.jpg";
+  const productImages = [girl1, girl2, girl3, girl3];
+  const brandLogos = [prada, capture, boss, cartier, gucci, tiffany];
+import image29 from "../assets/images/girl4-a8b3d73f.png";
+import image30 from "../assets/images/girl4-a8b3d73f.png";
+import image31 from "../assets/images/girl4-a8b3d73f.png";
+import image32 from "../assets/images/girl4-a8b3d73f.png";
+import image33 from "../assets/images/girl4-a8b3d73f.png";
+import image34 from "../assets/images/girl4-a8b3d73f.png";
+import image35 from "../assets/images/girl4-a8b3d73f.png";
+import image36 from "../assets/images/girl4-a8b3d73f.png";
+import image37 from "../assets/images/girl4-a8b3d73f.png";
+import image38 from "../assets/images/girl4-a8b3d73f.png";
+import image39 from "../assets/images/girl4-a8b3d73f.png";
+import image40 from "../assets/images/girl4-a8b3d73f.png";
+import bw1 from "../assets/images/bw1.jpg";
+import bw2 from "../assets/images/bw2.jpeg";
+import bw3 from "../assets/images/bw3.jpeg";
+import bw4 from "../assets/images/bw4.jpg";
+// import image31 from "../assets/images/girl4-a8b3d73f.png";
 function Accueil() {
   return (
     <>
@@ -84,7 +129,7 @@ function Accueil() {
                     </h1>
                     <a
                       href="#"
-                      className="btn btn-navbar rounded-pill bouton-acc  px-4  bg-dark fs-4 text-white "
+                      className="btn btn-navbar rounded-pill bouton-acc   bg-dark fs-3 text-white d-flex justify-content-center align-items-center"
                     >
                       Explore collections
                     </a>
@@ -102,9 +147,9 @@ function Accueil() {
                     <h1 className="display-1 fw-bold text-dark">
                       Luxury Fashion & Accessoires
                     </h1>
-                    <a
+                   <a
                       href="#"
-                      className="btn btn-navbar rounded-pill bouton-acc px-4  bg-dark fs-4 text-white"
+                      className="btn btn-navbar rounded-pill bouton-acc   bg-dark fs-3 text-white d-flex justify-content-center align-items-center"
                     >
                       Explore collections
                     </a>
@@ -139,563 +184,144 @@ function Accueil() {
           </button>
         </div>
       </section>
-      <section className="collections">
-        <div className="conainer mt-5">
-          <h2 className="text-center  text-uppercase">New Arrival</h2>
-          <div className="d-flex justify-content-center align-items-center mb-4 position-relative">
-            <hr className="w-25" />
-            <div className="ligne"></div>
-          </div>
-
-          <ul
-            className="nav nav-pills mb-3 justify-content-center py-5"
-            id="pills-tab"
-            role="tablist"
-          >
-            <li className="nav-item  link-colect" role="presentation">
-              <button
-                className="nav-link active"
-                id="pills-Starters-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-Starters"
-                type="button"
-                role="tab"
-                aria-controls="pills-Starters"
-                aria-selected="true"
-              >
-                All
-              </button>
-            </li>
-
-            <li className="nav-item link-colect" role="presentation">
-              <button
-                className="nav-link  "
-                id="pills-Breakfast-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-Breakfast"
-                type="button"
-                role="tab"
-                aria-controls="pills-Breakfast"
-                aria-selected="false"
-              >
-                Apparel
-              </button>
-            </li>
-            <li className="nav-item link-colect" role="presentation">
-              <button
-                className="nav-link "
-                id="pills-Lunch-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-Lunch"
-                type="button"
-                role="tab"
-                aria-controls="pills-Lunch"
-                aria-selected="false"
-              >
-                Dress
-              </button>
-            </li>
-            <li className="nav-item link-colect" role="presentation">
-              <button
-                className="nav-link"
-                id="pills-Dinner-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-Dinner"
-                type="button"
-                role="tab"
-                aria-controls="pills-Dinner"
-                aria-selected="false"
-              >
-                Tshirt
-              </button>
-            </li>
-            <li className="nav-item link-colect" role="presentation">
-              <button
-                className="nav-link"
-                id="pills-Dinner-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-Dinner"
-                type="button"
-                role="tab"
-                aria-controls="pills-Dinner"
-                aria-selected="false"
-              >
-                Bag
-              </button>
-            </li>
-          </ul>
-          <div className="tab-content " id="pills-tabContent">
-            <div
-              className="tab-pane fade show "
-              id="pills-Starters"
-              role="tabpanel"
-              aria-labelledby="pills-Starters-tab"
-              tabIndex={0}
-            >
-              <div className="container">
-                <div className="row row-cols-1 row-cols-md-4 g-5">
-                  <div className="col">
-                    <div className="justify-content-center">
-                      <img
-                        src= {image3}
-                        alt=""
-                        className="image-menu "
-                      />
-                      <div className="text-center">
-                        <h5>
-                          WN reversible angora <br /> cardigan
-                        </h5>
-                        <span className="text-danger fw-bold fs-4">$120</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                      src={image4}
-                      alt=""
-                      className="image-menu img-fluid"
-                    />
-                    <div className="text-center">
-                      <h5>
-                        21WN reversible angora <br /> cardigan
-                      </h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                      src={image5}
-                      alt=" "
-                      className="image-menu img-fluid"
-                    />
-                    <div className="text-center">
-                      <h5>
-                        WN reversible angora <br /> cardigan
-                      </h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                        src={image6}
-
-                      alt=" "
-                      className="image-menu img-fluid"
-                    />
-                    <div className="text-center">
-                      <h5>Oblong Bag</h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="tab-pane fade show active"
-              id="pills-Breakfast"
-              role="tabpanel"
-              aria-labelledby="pills-Breakfast-tab"
-              tabIndex={0}
-            >
-              <div className="container">
-                <div className="row row-cols-2 justify-content-center row-cols-md-4 g-5 ">
-                  <div className="col">
-                    <div className="justify-content-center">
-                      <img
-                        src="Images/girl1-a91d48b4.png"
-                        alt=""
-                        className="image-menu "
-                      />
-                      <div className="text-center">
-                        <h5>
-                          WN reversible angora <br /> cardigan
-                        </h5>
-                        <span className="text-danger fw-bold fs-4">$120</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                      src="Images/girl2-47d9e9b0.png"
-                      alt=""
-                      className="image-menu img-fluid"
-                    />
-                    <div className="text-center">
-                      <h5>
-                        21WN reversible angora <br /> cardigan
-                      </h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                      src="Images/girl3-40737473.png"
-                      alt=" "
-                      className="image-menu img-fluid"
-                    />
-                    <div className="text-center">
-                      <h5>
-                        WN reversible angora <br /> cardigan
-                      </h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                      src="Images/girl3-40737473.png"
-                      alt=" "
-                      className="image-menu img-fluid"
-                    />
-                    <div className="text-center">
-                      <h5>Oblong Bag</h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="tab-pane fade show "
-              id="pills-Lunch"
-              role="tabpanel"
-              aria-labelledby="pills-Lunch-tab"
-              tabIndex={0}>
-              <div className="container ">
-                <div className="row row-cols-2 row-cols-md-4 g-5 ">
-                  <div className="col">
-                    <div className="justify-content-center">
-                      <img
-                        src="Images/girl1-a91d48b4.png"
-                        alt=""
-                        className="image-menu "
-                      />
-                      <div className="text-center">
-                        <h5>
-                          WN reversible angora <br /> cardigan
-                        </h5>
-                        <span className="text-danger fw-bold fs-4">$120</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                      src="Images/girl2-47d9e9b0.png"
-                      alt=""
-                      className="image-menu img-fluid"
-                    />
-                    <div className="text-center">
-                      <h5>
-                        21WN reversible angora <br /> cardigan
-                      </h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                      src="Images/girl3-40737473.png"
-                      alt=" "
-                      className="image-menu img-fluid"
-                    />
-                    <div className="text-center">
-                      <h5>
-                        WN reversible angora <br /> cardigan
-                      </h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                      src="Images/girl3-40737473.png"
-                      alt=" "
-                      className="image-menu img-fluid"
-                    />
-                    <div className="text-center">
-                      <h5>Oblong Bag</h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="tab-pane fade show "
-              id="pills-Dinner"
-              role="tabpanel"
-              aria-labelledby="pills-Dinner-tab"
-              tabIndex={0}
-            >
-              <div className="container ">
-                <div className="row row-cols-2 row-cols-md-4 g-5 ">
-                  <div className="col-md-3">
-                    <div className="justify-content-center">
-                      <img
-                        src="Images/girl1-a91d48b4.png"
-                        alt=""
-                        className="image-menu "
-                      />
-                      <div className="text-center">
-                        <h5>
-                          WN reversible angora <br /> cardigan
-                        </h5>
-                        <span className="text-danger fw-bold fs-4">$120</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <img
-                      src="Images/girl3-40737473.png"
-                      alt=""
-                      className="image-menu "
-                    />
-                    <div className="text-center">
-                      <h5>
-                        21WN reversible angora <br /> cardigan
-                      </h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <img
-                      src="Images/girl2-47d9e9b0.png"
-                      alt=" "
-                      className="image-menu "
-                    />
-                    <div className="text-center">
-                      <h5>
-                        WN reversible angora <br /> cardigan
-                      </h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <img
-                      src="Images/girl3-40737473.png"
-                      alt=" "
-                      className="image-menu "
-                    />
-                    <div className="text-center">
-                      <h5>Oblong Bag</h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="tab-pane fade show "
-              id="pills-Dinner"
-              role="tabpanel"
-              aria-labelledby="pills-Dinner-tab"
-             tabIndex={0}
-            >
-              <div className="container ">
-                <div className="row row-cols-2 row-cols-md-4 g-5 ">
-                  <div className="col">
-                    <div className="justify-content-center">
-                      <img
-                        src="Images/girl2-47d9e9b0.png"
-                        alt=""
-                        className="image-menu "
-                      />
-                      <div className="text-center">
-                        <h5>
-                          WN reversible angora <br /> cardigan
-                        </h5>
-                        <span className="text-danger fw-bold fs-4">$120</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                      src="Images/girl1-a91d48b4.png"
-                      alt=""
-                      className="image-menu "
-                    />
-                    <div className="text-center">
-                      <h5>
-                        21WN reversible angora <br /> cardigan
-                      </h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                      src="Images/girl2-47d9e9b0.png"
-                      alt=" "
-                      className="image-menu "
-                    />
-                    <div className="text-center">
-                      <h5>
-                        WN reversible angora <br /> cardigan
-                      </h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <img
-                      src="Images/girl3-40737473.png"
-                      alt=" "
-                      className="image-menu "
-                    />
-                    <div className="text-center">
-                      <h5>Oblong Bag</h5>
-                      <span className="text-danger fw-bold fs-4">$120</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  
+ <section className="collections">
+      <div className="container mt-5">
+        <h2 className="text-center text-uppercase">New Arrival</h2>
+        <div className="d-flex justify-content-center align-items-center mb-4 position-relative">
+          <hr className="w-25" />
+          <div className="ligne"></div>
         </div>
 
-        <div className="container my-5 text-center P-4">
-          <div className=" mb-4  d-flex justify-content-center  align-items-center">
-            <a href="#" className="text-decoration-none fs-2  text-dark">
-              Explore More{" "}
-              <span className="ms-1">
-                <i className="bi bi-arrow-right "></i>
-              </span>
+        <ul className="nav nav-pills mb-3 justify-content-center py-5" id="pills-tab" role="tablist">
+          {['All', 'Apparel', 'Dress', 'Tshirt', 'Bag'].map((label, i) => (
+            <li key={i} className="nav-item link-colect" role="presentation">
+              <button
+                className={`nav-link ${label === 'All' ? 'active' : ''}`}
+                id={`pills-${label}-tab`}
+                data-bs-toggle="pill"
+                data-bs-target={`#pills-${label}`}
+                type="button"
+                role="tab"
+                aria-controls={`pills-${label}`}
+                aria-selected={label === 'All' ? 'true' : 'false'}
+              >
+                {label}
+              </button>
+            </li>
+          ))}
+        </ul>
+
+        <div className="tab-content" id="pills-tabContent">
+          {['All', 'Apparel', 'Dress', 'Tshirt', 'Bag'].map((label, index) => (
+            <div
+              key={index}
+              className={`tab-pane fade ${label === 'All' ? 'show active' : ''}`}
+              id={`pills-${label}`}
+              role="tabpanel"
+              aria-labelledby={`pills-${label}-tab`}
+              tabIndex="0"
+            >
+              <div className="container">
+                <div className="row row-cols-2 row-cols-md-4 g-5">
+                  {productImages.map((src, i) => (
+                    <div className="col" key={i}>
+                      <div className="justify-content-center">
+                        <img src={src} alt="product" className="image-menu img-fluid" />
+                        <div className="text-center">
+                          <h5>WN reversible angora <br /> cardigan</h5>
+                          <span className="text-danger fw-bold fs-4">$120</span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="container my-5 text-center P-4">
+        <div className="mb-4 d-flex justify-content-center align-items-center">
+          <a href="#" className="text-decoration-none fs-2 text-dark">
+            Explore More <span className="ms-1"><i className="bi bi-arrow-right"></i></span>
+          </a>
+        </div>
+
+        <div className="d-flex justify-content-center align-items-center mb-4 position-relative">
+          <hr className="w-25" />
+          <div className="ligne"></div>
+        </div>
+
+        <div className="row justify-content-center align-items-center gx-5 gy-3">
+          {brandLogos.map((src, i) => (
+            <div className="col-auto" key={i}>
+              <p className="fw-bold m-0">
+                <img src={src} alt="marque" className="img-fluid image-marque" />
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="d-flex justify-content-center align-items-center mt-4 position-relative">
+          <hr className="w-25" />
+          <div className="ligne"></div>
+        </div>
+      </div>
+
+      <div className="container my-5">
+        <h4 className="text-center mb-5">COLLECTIONS</h4>
+        <div className="row g-4">
+          {[1, 2].map((n) => (
+            <div className="col-md-6 position-relative" key={n}>
+              <img src={collect2} className="img-fluid w-100" alt="Collection" />
+              <div className="position-absolute top-50 start-50 translate-middle text-center">
+                {n === 1 ? (
+                  <>
+                    <h1 className="display-1 fw-bold opacity-25 m-0 fs-2 text-white">10</h1>
+                    <h4 className="position-absolute top-50 start-50 translate-middle text-white fw-bold">
+                      October<br /><small className="fw-light fs-2">COLLECTION</small>
+                    </h4>
+                  </>
+                ) : (
+                  <>
+                    <h3 className="fw-bold m-0 fs-2 text-dark">Autumn</h3>
+                    <small className="fw-light fs-2 text-dark">COLLECTION</small>
+                  </>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="container my-5">
+        <div className="row justify-content-center">
+          <div className="col-md-10 col-lg-8 position-relative">
+            <img src={collect1} className="img-fluid w-100 rounded" alt="Video Preview" />
+            <a href="#" className="position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal" data-bs-target="#videoModal">
+              <button className="btn btn-light rounded-circle shadow-lg bouton-video">
+                <i className="bi bi-play-fill fs-1"></i>
+              </button>
             </a>
           </div>
-
-          <div className="d-flex justify-content-center align-items-center mb-4 position-relative">
-            <hr className="w-25" />
-            <div className="ligne"></div>
-          </div>
-          <div className="row justify-content-center align-items-center gx-5 gy-3">
-            <div className="col-auto">
-              <p className="fw-bold m-0">
-                <img
-                  src="Images/prada-logo-black-and-white.png"
-                  alt=""
-                  className="img-fluid image-marque"
-                />
-              </p>
-            </div>
-            <div className="col-auto">
-              <p className="fw-bold m-0">
-                <img
-                  src="Images/875-875-capture-d-e-cran-2018-08-03-a-13-18-47_c048605b21956f554a2635e60998754f.png"
-                  alt=""
-                  className="img-fluid image-marque"
-                />
-              </p>
-            </div>
-            <div className="col-auto">
-              <p className="fw-bold m-0">
-                <img
-                  src="Images/boss-hugo-boss-logo-svg-vector.svg"
-                  alt=""
-                  className="img-fluid image-marque"
-                />
-              </p>
-            </div>
-            <div className="col-auto">
-              <p className="fst-italic m-0">
-                <img
-                  src="Images/cartier-2-logo-png-transparent.png"
-                  alt=""
-                  className="img-fluid image-marque"
-                />
-              </p>
-            </div>
-            <div className="col-auto">
-             <p className="m-0" style={{ letterSpacing: "0.4rem" }}>
-                <img
-                  src="Images/gucci-logo-png_seeklogo-64069.png"
-                  alt=""
-                  className="img-fluid image-marque"
-                />
-              </p>
-            </div>
-            <div className="col-auto">
-              <p className="m-0">
-                <img
-                  src="Images/tiffany-co-logo-png-transparent.png"
-                  alt=""
-                  className="img-fluid image-marque"
-                />
-              </p>
-            </div>
-          </div>
-
-          <div className="d-flex justify-content-center align-items-center mt-4 position-relative">
-            <hr className="w-25" />
-            <div className="ligne"></div>
-          </div>
         </div>
+      </div>
 
-        <div className="container my-5">
-          <h4 className="text-center mb-5">COLLECTIONS</h4>
-          <div className="row g-4">
-            <div className="col-md-6 position-relative">
-              <img
-                src="Images/accuiel-collect2.jpg"
-                className="img-fluid w-100"
-                alt="October Collection"
-              />
-              <div className="position-absolute top-50 start-50 translate-middle text-white text-center">
-                <h1 className="display-1 fw-bold opacity-25 m-0 fs-2">10</h1>
-                <h4 className="position-absolute top-50 start-50 translate-middle text-white fw-bold">
-                  October
-                  <br />
-                  <small className="fw-light fs-2">COLLECTION</small>
-                </h4>
-              </div>
-            </div>
-            <div className="col-md-6 position-relative">
-              <img
-                src="Images/accuiel-collect2.jpg"
-                className="img-fluid w-100"
-                alt="Autumn Collection"
-              />
-              <div className="position-absolute top-50 start-50 translate-middle text-dark text-center">
-                <h3 className="fw-bold m-0 fs-2">Autumn</h3>
-                <small className="fw-light fs-2">COLLECTION</small>
-              </div>
+      <div className="modal fade" id="videoModal" tabIndex="-1" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-content bg-dark border-0">
+            <div className="modal-body p-0">
+              <video controls autoPlay className="w-100">
+                <source src="/chemin/vers/ta-video.mp4" type="video/mp4" />
+                Votre navigateur ne prend pas en charge la lecture vidéo.
+              </video>
             </div>
           </div>
         </div>
-        <div className="container my-5">
-          <div className="row justify-content-center">
-            <div className="col-md-10 col-lg-8 position-relative">
-              <img
-                src="assets/images/accuiel-collect1.jpg"
-                className="img-fluid w-100 rounded"
-                alt="Video Preview"
-              />
-              <a
-                href="#"
-                className="position-absolute top-50 start-50 translate-middle"
-                data-bs-toggle="modal"
-                data-bs-target="#videoModal"
-              >
-                <button className="btn btn-light rounded-circle shadow-lg bouton-video">
-                  <i className="bi bi-play-fill fs-1"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="modal fade"
-          id="videoModal"
-          tabIndex={-1}
-          aria-hidden="true"
-        >
-          <div className="modal-dialog modal-dialog-centered modal-lg">
-            <div className="modal-content bg-dark border-0">
-              <div className="modal-body p-0">
-                <video controls autoPlay className="w-100">
-                  <source src="chemin/vers/ta-video.mp4" type="video/mp4" />
-                  Votre navigateur ne prend pas en charge la lecture vidéo.
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+  </section>
 
       <section className="container my-5 mt-5 mb-5">
         <div className="container pov">
@@ -739,7 +365,7 @@ function Accueil() {
                   <div className="col">
                     <div className="">
                       <img
-                        src="i/girl2-47d9e9b0.png"
+                        src={image29}
                         className="imgs img-fluid"
                         alt="..."
                       />
@@ -755,7 +381,7 @@ function Accueil() {
                   <div className="col">
                     <div className="">
                       <img
-                        src="i/girl1-a91d48b4.png"
+                        src={image30}
                         className="imgs img-fluid"
                         alt="..."
                       />
@@ -771,7 +397,7 @@ function Accueil() {
                   <div className="col">
                     <div className="">
                       <img
-                        src="i/girl2-47d9e9b0.png"
+                        src={image31}
                         className="imgs img-fluid"
                         alt="..."
                       />
@@ -787,7 +413,7 @@ function Accueil() {
                   <div className="col">
                     <div className="">
                       <img
-                        src="i/girl3-40737473.png"
+                        src={image32}
                         className="imgs img-fluid"
                         alt="..."
                       />
@@ -808,7 +434,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="i/girl2-47d9e9b0.png"
+                      src={image33}
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -824,7 +450,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="i/girl4-a8b3d73f.png"
+                      src={image34}
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -840,7 +466,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="i/girl2-47d9e9b0.png"
+                      src={image35}
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -856,7 +482,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="i/girl1-a91d48b4.png"
+                      src={image36}
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -876,7 +502,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="assets/images/girl4-a8b3d73f.png"
+                      src={image37}
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -892,7 +518,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="i/girl2-47d9e9b0.png"
+                      src={image38}
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -908,7 +534,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="i/girl1-a91d48b4.png"
+                      src={image39}
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -924,7 +550,7 @@ function Accueil() {
                 <div className="col">
                   <div className="">
                     <img
-                      src="i/girl2-47d9e9b0.png"
+                      src={image40}
                       className="imgs img-fluid"
                       alt="..."
                     />
@@ -1044,29 +670,30 @@ function Accueil() {
         </div>
       </section>
 
-      <section className="container mb-5 my-5 mt-5">
-        <div className=" mt-5">
+     <section className="container my-5">
+        <div className="mt-5">
           <h3 className="text-center">FOLLOW US</h3>
-          <div className=" text-center">
+          <div className="text-center">
             <i className="bi bi-instagram fs-1"></i>
           </div>
         </div>
+
         <div className="container mb-5">
           <div className="row mt-5 row-cols-2 row-cols-md-4 g-5">
-            <div className="col">
-              <img src="assets/images/bw1.jpg" className="img-fluid low " alt="" />
+            <div className="col position-relative">
+              <img src={bw1} className="img-fluid low" alt="@mia" />
               <p className="position-absolute mi text-light">@mia</p>
             </div>
-            <div className="col">
-              <img src="assets/images/bw2.jpeg" className="img-fluid low" alt="" />
+            <div className="col position-relative">
+              <img src={bw2} className="img-fluid low" alt="@_jihyn" />
               <p className="position-absolute mi text-light">@_jihyn</p>
             </div>
-            <div className="col">
-              <img src="assets/images/bw3.jpeg" className="img-fluid low" alt="" />
+            <div className="col position-relative">
+              <img src={bw3} className="img-fluid low" alt="@mia" />
               <p className="position-absolute mi text-light">@mia</p>
             </div>
-            <div className="col">
-              <img src="assets/images/bw4.jpg" className="img-fluid low" alt="" />
+            <div className="col position-relative">
+              <img src={bw4} className="img-fluid low" alt="@_jihyn" />
               <p className="position-absolute mi text-light">@_jihyn</p>
             </div>
           </div>

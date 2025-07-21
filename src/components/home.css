@@ -10,8 +10,6 @@
 background: url("../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp") ;
 background-size: cover;
  background-repeat: no-repeat;
- 
-  display: block;
  /* background-position: center; */
 
 
@@ -21,20 +19,23 @@ background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center;    */
-  display: block;
+
 } 
 .bouton-acc{
-    opacity: 0.6;
+     padding: 0.5rem 1.5rem !important;
+  opacity: 0.6;
+  backdrop-filter: blur(4px) !important;
+  border: none;
 }
+
+    /* opacity: 0.6; */
+
     /* button scoll */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5); /* ou ta couleur */
-  background-size: 30px 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 70px;
-  height: 70px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
 }
 
@@ -55,11 +56,12 @@ background-size: cover;
         width: 120px;
         height: 70px;
     }
-.collections .nav-pills  .nav-link{
-        background-color:transparent;
+.nav-pills  .nav-link{
+        background-color:white ; 
         color: #ccc8c8;
         font-weight: bold;
-        font-size: 22px;
+        font-size: 22px !important;
+
     }
     .link-colect{
         border-bottom:2px solid rgb(180, 177, 177) ;
