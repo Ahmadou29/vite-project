@@ -3,35 +3,79 @@ import './home.css';
 import { Link } from "react-router-dom";
 
 import logo from "../assets/images/logo-removebg-preview (1).png";
-//  import image3 from "../assets/images/girl1-a91d48b4.png";
-//  import image4 from "../assets/images/girl2-47d9e9b0.png";
-//  import image5 from "../assets/images/girl3-40737473.png";
-// import image6 from "../assets/images/girl4-a8b3d73f.png";
-// import image7 from "../assets/images/girl4-a8b3d73f.png";
-// import image8 from "../assets/images/girl4-a8b3d73f.png";
-// import image9 from "../assets/images/girl4-a8b3d73f.png";
-// import image10 from "../assets/images/girl4-a8b3d73f.png";
-// import image11 from "../assets/images/girl4-a8b3d73f.png";
-// import image12 from "../assets/images/girl4-a8b3d73f.png";
-// import image13 from "../assets/images/girl4-a8b3d73f.png";
-// import image14 from "../assets/images/girl4-a8b3d73f.png";
-// import image15 from "../assets/images/girl4-a8b3d73f.png";
-// import image16 from "../assets/images/girl4-a8b3d73f.png";
-// import image17 from "../assets/images/girl4-a8b3d73f.png";
-// import image18 from "../assets/images/girl4-a8b3d73f.png";
-// import image19 from "../assets/images/girl4-a8b3d73f.png";
-// import image20 from "../assets/images/girl4-a8b3d73f.png";
-// import image21 from "../assets/images/girl4-a8b3d73f.png";
-// import image22 from "../assets/images/girl4-a8b3d73f.png";
-// import image23 from "../assets/images/girl4-a8b3d73f.png";
-// import image24 from "../assets/images/girl4-a8b3d73f.png";
-// import image25 from "../assets/images/girl4-a8b3d73f.png";
-// import image26 from "../assets/images/girl4-a8b3d73f.png";
-// import image27 from "../assets/images/girl4-a8b3d73f.png";
-// import image28 from "../assets/images/girl4-a8b3d73f.png";
-  import girl1 from "../assets/images/girl1-a91d48b4.png";
-import girl2 from "../assets/images/girl2-47d9e9b0.png";
-import girl3 from "../assets/images/girl3-40737473.png";
+import imgFemme10 from "../assets/images/femme (10).jpg";
+import imgHomme9 from "../assets/images/homme 9.jpg";
+import imgFemme16 from "../assets/images/femme 2 (16).jpg";
+import imgFemme2_2 from "../assets/images/femme 2 (2).jpeg";
+import imgFemme4 from "../assets/images/femme 2 (4).webp";
+import imgGirl2 from "../assets/images/girl2-47d9e9b0.png";
+import imgSacCabas from "../assets/images/sac-cabas.avif";
+import imgSacTote from "../assets/images/sac_a_main_the_small_tote_cuir_metallise-1.avif";
+import imgSacMoyen3 from "../assets/images/sac-moyen3.avif";
+import imgBody from "../assets/images/body.webp";
+import imgBody2 from "../assets/images/body2.webp";
+import imgBody3 from "../assets/images/body3.webp";
+import imgFemme18 from "../assets/images/femme (18).jpg";
+import imgFemme6 from "../assets/images/femme (6).jpg";
+import imgFemme18bis from "../assets/images/femme (18).jpg";
+import imgBody4 from "../assets/images/body4.webp";
+// import imgFemme18third from "../assets/images/femme (18).jpg";
+// import imgFemme18fourth from "../assets/images/femme (18).jpg";
+// import imgFemme18fifth from "../assets/images/femme (18).jpg";
+// import imgFemme18sixth from "../assets/images/femme (18).jpg";
+import imgGirl2Bag from "../assets/images/girl2-47d9e9b0.png";
+
+// import femme1 from '../assets/images/femme (10).jpg';
+// import homme9 from '../assets/images/homme 9.jpg';
+// import femme16 from '../assets/images/femme 2 (16).jpg';
+// import femme2 from '../assets/images/femme 2 (2).jpeg';
+// import femme4 from '../assets/images/femme 2 (4).webp';
+// import sacCabas from '../assets/images/sac-cabas.avif';
+// import sacMetallise from '../assets/images/sac_a_main_the_small_tote_cuir_metallise-1.avif';
+// import sacMoyen from '../assets/images/sac-moyen3.avif';
+// import girl2 from '../assets/images/girl2-47d9e9b0.png';
+// import body1 from '../assets/images/body.webp';
+// import body2 from '../assets/images/body2.webp';
+// import body3 from '../assets/images/body3.webp';
+// import body4 from '../assets/images/body4.webp';
+// import femme18 from '../assets/images/femme (18).jpg';
+// import femme6 from '../assets/images/femme (6).jpg';
+
+// const products = {
+//   All: [
+//     { src: femme1, title: 'WN reversible angora cardigan', price: 120 },
+//     { src: homme9, title: '21WN reversible angora cardigan', price: 120 },
+//     { src: sacCabas, title: 'BALMAIN sac Cavan', price: 120 },
+//     { src: sacMetallise, title: 'Sac cuir métallisé', price: 120 },
+//   ],
+//   Apparel: [
+//     { src: femme1, title: 'WN reversible angora cardigan', price: 120 },
+//     { src: homme9, title: '21WN reversible angora cardigan', price: 120 },
+//     { src: femme16, title: 'WN reversible angora cardigan', price: 120 },
+//     { src: femme18, title: 'Cardigan', price: 120 },
+//   ],
+//   Dress: [
+//     { src: femme2, title: 'WN reversible angora cardigan', price: 120 },
+//     { src: femme4, title: 'WN reversible angora cardigan', price: 120 },
+//     { src: femme18, title: 'WN reversible angora cardigan', price: 120 },
+//     { src: femme6, title: 'WN reversible angora cardigan', price: 120 },
+//   ],
+//   Tshirt: [
+//     { src: body1, title: 'WN reversible angora cardigan', price: 120 },
+//     { src: body2, title: '21WN reversible angora cardigan', price: 120 },
+//     { src: body3, title: 'WN reversible angora cardigan', price: 120 },
+//     { src: body4, title: 'WN reversible angora cardigan', price: 120 },
+//   ],
+//   Bag: [
+//     { src: sacCabas, title: 'BALMAIN sac Cavan', price: 120 },
+//     { src: sacMetallise, title: 'Cuir métallisé', price: 120 },
+//     { src: sacMoyen, title: 'Sac moyen cuir', price: 120 },
+//     { src: girl2, title: 'Oblong Bag', price: 120 },
+//   ],
+// };
+
+// const tabList = ['All', 'Apparel', 'Dress', 'Tshirt', 'Bag'];
+
 import prada from "../assets/images/prada-logo-black-and-white.png";
 import capture from "../assets/images/875-875-capture-d-e-cran-2018-08-03-a-13-18-47_c048605b21956f554a2635e60998754f.png";
 import boss from "../assets/images/boss-hugo-boss-logo-svg-vector.svg";
@@ -40,7 +84,7 @@ import gucci from "../assets/images/gucci-logo-png_seeklogo-64069.png";
 import tiffany from "../assets/images/tiffany-co-logo-png-transparent.png";
 import collect1 from "../assets/images/accuiel-collect1.jpg";
 import collect2 from "../assets/images/accuiel-collect2.jpg";
-  const productImages = [girl1, girl2, girl3, girl3];
+  // const productImages = [girl1, girl2, girl3, girl3];
   const brandLogos = [prada, capture, boss, cartier, gucci, tiffany];
 import image29 from "../assets/images/girl4-a8b3d73f.png";
 import image30 from "../assets/images/girl4-a8b3d73f.png";
@@ -89,7 +133,7 @@ function Accueil() {
 
               </li>
               <li className="nav-item">
-                <Link className="nav-link fs-5" to="categorie/">Categorie</Link>
+                <Link className="nav-link fs-5" to="/categorie">Categorie</Link>
               </li>
             </ul>
           </div>
@@ -101,9 +145,10 @@ function Accueil() {
               aria-label="Search"
             />
           </form>
-          <a className="nav-link me-3 fs-5" href="#">
-            Se connecter
-          </a>
+           <Link className="nav-link me-3 fs-5" to="/register">
+           
+          Se connecter
+        </Link>
           <a className="nav-link fs-5" href="#">
             <i className="bi bi-cart"></i>
           </a>
@@ -186,61 +231,473 @@ function Accueil() {
       </section>
   
  <section className="collections">
-      <div className="container mt-5">
-        <h2 className="text-center text-uppercase">New Arrival</h2>
-        <div className="d-flex justify-content-center align-items-center mb-4 position-relative">
-          <hr className="w-25" />
-          <div className="ligne"></div>
-        </div>
+   
 
-        <ul className="nav nav-pills mb-3 justify-content-center py-5" id="pills-tab" role="tablist">
-          {['All', 'Apparel', 'Dress', 'Tshirt', 'Bag'].map((label, i) => (
-            <li key={i} className="nav-item link-colect" role="presentation">
-              <button
-                className={`nav-link ${label === 'All' ? 'active' : ''}`}
-                id={`pills-${label}-tab`}
-                data-bs-toggle="pill"
-                data-bs-target={`#pills-${label}`}
-                type="button"
-                role="tab"
-                aria-controls={`pills-${label}`}
-                aria-selected={label === 'All' ? 'true' : 'false'}
-              >
-                {label}
-              </button>
-            </li>
-          ))}
-        </ul>
 
-        <div className="tab-content" id="pills-tabContent">
-          {['All', 'Apparel', 'Dress', 'Tshirt', 'Bag'].map((label, index) => (
-            <div
-              key={index}
-              className={`tab-pane fade ${label === 'All' ? 'show active' : ''}`}
-              id={`pills-${label}`}
-              role="tabpanel"
-              aria-labelledby={`pills-${label}-tab`}
-              tabIndex="0"
-            >
-              <div className="container">
-                <div className="row row-cols-2 row-cols-md-4 g-5">
-                  {productImages.map((src, i) => (
-                    <div className="col" key={i}>
-                      <div className="justify-content-center">
-                        <img src={src} alt="product" className="image-menu img-fluid" />
-                        <div className="text-center">
-                          <h5>WN reversible angora <br /> cardigan</h5>
-                          <span className="text-danger fw-bold fs-4">$120</span>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+
+    <div className="container mt-5">
+      <h2 className="text-center text-uppercase">New Arrival</h2>
+      <div className="d-flex justify-content-center align-items-center mb-4 position-relative">
+        <hr className="w-25" />
+        <div className="ligne"></div>
+      </div>
+
+      <ul
+        className="nav nav-pills mb-3 justify-content-center py-5"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li className="nav-item link-colect" role="presentation">
+          <button
+            className="nav-link active"
+            id="pills-Starters-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-Starters"
+            type="button"
+            role="tab"
+            aria-controls="pills-Starters"
+            aria-selected="true"
+          >
+            All
+          </button>
+        </li>
+        <li className="nav-item link-colect" role="presentation">
+          <button
+            className="nav-link"
+            id="pills-Breakfast-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-Breakfast"
+            type="button"
+            role="tab"
+            aria-controls="pills-Breakfast"
+            aria-selected="false"
+          >
+            Apparel
+          </button>
+        </li>
+        <li className="nav-item link-colect" role="presentation">
+          <button
+            className="nav-link"
+            id="pills-Lunch-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-Lunch"
+            type="button"
+            role="tab"
+            aria-controls="pills-Lunch"
+            aria-selected="false"
+          >
+            Dress
+          </button>
+        </li>
+        <li className="nav-item link-colect" role="presentation">
+          <button
+            className="nav-link"
+            id="pills-Dinner-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-Dinner"
+            type="button"
+            role="tab"
+            aria-controls="pills-Dinner"
+            aria-selected="false"
+          >
+            Tshirt
+          </button>
+        </li>
+        <li className="nav-item link-colect" role="presentation">
+          <button
+            className="nav-link"
+            id="pills-Bag-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-Bag"
+            type="button"
+            role="tab"
+            aria-controls="pills-Bag"
+            aria-selected="false"
+          >
+            Bag
+          </button>
+        </li>
+      </ul>
+
+      <div className="tab-content" id="pills-tabContent">
+        {/* All */}
+        <div
+          className="tab-pane fade show active"
+          id="pills-Starters"
+          role="tabpanel"
+          aria-labelledby="pills-Starters-tab"
+          tabIndex="0"
+        >
+          <div className="container">
+            <div className="row row-cols-1 row-cols-md-4 g-5">
+              <div className="col">
+                <div className="justify-content-center">
+                  <img src={imgFemme10} alt="" className="image-menu" />
+                  <div className="text-center">
+                    <h5>
+                      WN reversible angora <br />
+                      cardigan
+                    </h5>
+                    <span className="text-danger fw-bold fs-4">$120</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgHomme9} alt="" className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    21WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgFemme16} alt=" " className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgFemme2_2} alt=" " className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
                 </div>
               </div>
             </div>
-          ))}
+            <div className="row row-cols-1 row-cols-md-4 g-5 py-3">
+              <div className="col">
+                <div className="justify-content-center">
+                  <img src={imgFemme4} alt="" className="image-menu" />
+                  <div className="text-center">
+                    <h5>
+                      WN reversible angora <br />
+                      cardigan
+                    </h5>
+                    <span className="text-danger fw-bold fs-4">$120</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgGirl2} alt="" className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>Oblong Bag </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgSacCabas} alt=" " className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    BALMAIN
+                    <br /> sac Cavan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <img
+                  src={imgSacTote}
+                  alt=" "
+                  className="image-menu img-fluid"
+                />
+                <div className="text-center">
+                  <h5>
+                    sac a main the small
+                    <br /> tote cuir metallise
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+            </div>
+            <div className="row row-cols-1 row-cols-md-4 g-5 py-3">
+              <div className="col">
+                <div className="justify-content-center">
+                  <img src={imgSacMoyen3} alt="" className="image-menu" />
+                  <div className="text-center">
+                    <h5>
+                      <br /> cardigan
+                    </h5>
+                    <span className="text-danger fw-bold fs-4">$120</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgBody} alt="" className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    21WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgBody2} alt=" " className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgBody3} alt=" " className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>Oblong Bag</h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Apparel */}
+        <div
+          className="tab-pane fade"
+          id="pills-Breakfast"
+          role="tabpanel"
+          aria-labelledby="pills-Breakfast-tab"
+          tabIndex="0"
+        >
+          <div className="container">
+            <div className="row row-cols-2 justify-content-center row-cols-md-4 g-5">
+              <div className="col">
+                <div className="justify-content-center">
+                  <img src={imgFemme10} alt="" className="image-menu" />
+                  <div className="text-center">
+                    <h5>
+                      WN reversible angora <br />
+                      cardigan
+                    </h5>
+                    <span className="text-danger fw-bold fs-4">$120</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgHomme9} alt="" className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    21WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgFemme16} alt=" " className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <div className="justify-content-center">
+                  <img src={imgFemme18} alt="" className="image-menu" />
+                  <div className="text-center">
+                    <h5>
+                      <br /> cardigan
+                    </h5>
+                    <span className="text-danger fw-bold fs-4">$120</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Dress */}
+        <div
+          className="tab-pane fade"
+          id="pills-Lunch"
+          role="tabpanel"
+          aria-labelledby="pills-Lunch-tab"
+          tabIndex="0"
+        >
+          <div className="container">
+            <div className="row row-cols-2 row-cols-md-4 g-5">
+              <div className="col">
+                <div className="justify-content-center">
+                  <img src={imgFemme2_2} alt="" className="image-menu" />
+                  <div className="text-center">
+                    <h5>
+                      WN reversible angora <br />
+                      cardigan
+                    </h5>
+                    <span className="text-danger fw-bold fs-4">$120</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="justify-content-center">
+                  <img src={imgFemme4} alt="" className="image-menu" />
+                  <div className="text-center">
+                    <h5>
+                      WN reversible angora <br />
+                      cardigan
+                    </h5>
+                    <span className="text-danger fw-bold fs-4">$120</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgFemme18bis} alt="" className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgFemme6} alt=" " className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Tshirt */}
+        <div
+          className="tab-pane fade"
+          id="pills-Dinner"
+          role="tabpanel"
+          aria-labelledby="pills-Dinner-tab"
+          tabIndex="0"
+        >
+          <div className="container">
+            <div className="row row-cols-2 row-cols-md-4 g-5">
+              <div className="col-md-3">
+                <div className="justify-content-center">
+                  <img src={imgBody} alt="" className="image-menu" />
+                  <div className="text-center">
+                    <h5>
+                      WN reversible angora <br />
+                      cardigan
+                    </h5>
+                    <span className="text-danger fw-bold fs-4">$120</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <img src={imgBody2} alt="" className="image-menu" />
+                <div className="text-center">
+                  <h5>
+                    21WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <img src={imgBody3} alt=" " className="image-menu" />
+                <div className="text-center">
+                  <h5>
+                    WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <img src={imgBody4} alt=" " className="image-menu" />
+                <div className="text-center">
+                  <h5>
+                    WN reversible angora <br />
+                    cardigan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bag */}
+        <div
+          className="tab-pane fade"
+          id="pills-Bag"
+          role="tabpanel"
+          aria-labelledby="pills-Bag-tab"
+          tabIndex="0"
+        >
+          <div className="container">
+            <div className="row row-cols-2 row-cols-md-4 g-5">
+              <div className="col">
+                <img src={imgSacCabas} alt=" " className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    BALMAIN
+                    <br /> sac Cavan
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <img
+                  src={imgSacTote}
+                  alt=" "
+                  className="image-menu img-fluid"
+                />
+                <div className="text-center">
+                  <h5>
+                    sac a main the small
+                    <br /> tote cuir metallise
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgSacMoyen3} alt=" " className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>
+                    sac a main the small
+                    <br /> tote cuir metallise
+                  </h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+              <div className="col">
+                <img src={imgGirl2Bag} alt=" " className="image-menu img-fluid" />
+                <div className="text-center">
+                  <h5>sac a main the small</h5>
+                  <span className="text-danger fw-bold fs-4">$120</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
 
       <div className="container my-5 text-center P-4">
         <div className="mb-4 d-flex justify-content-center align-items-center">
@@ -269,7 +726,6 @@ function Accueil() {
           <div className="ligne"></div>
         </div>
       </div>
-
       <div className="container my-5">
         <h4 className="text-center mb-5">COLLECTIONS</h4>
         <div className="row g-4">

@@ -34,8 +34,8 @@ background-size: cover;
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.5); 
-  width: 90px;
-  height: 90px;
+  width: 70px !important;
+  height: 70px !important;
   border-radius: 50%;
 }
 
@@ -47,10 +47,11 @@ background-size: cover;
         font-size:18px;
         color: #b1adad;
     }
-    .image-menu{
-        object-fit: cover;
-        width: 270px;
-        height: 350px;
+        .image-menu {
+  height: 300px !important;      
+  width: 100% !important;         
+  object-fit: cover;   
+  display: block;      
     }
     .image-marque{
         width: 120px;
@@ -139,3 +140,13 @@ background-size: cover;
 
 }
 
+/* Authentification */
+/* .btn-orange {
+  background-color: #fd7e14;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.btn-orange:hover {
+  background-color: #e96c0b;
+} */
