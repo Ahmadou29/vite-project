@@ -1,9 +1,11 @@
 import React from 'react';
+import './blog.css';
+
 
 function Blog() {
   return (
+    <>
     <div className="text-center bg-purple"> 
-
         <div className="container-fluid">
             <div className="row">
                 <div className="col-12">
@@ -22,7 +24,8 @@ function Blog() {
                         <li className="nav-item" role="presentation">
                             <button className="nav-link fs-5 me-2 me-md-4 text-dark" id="contact-tab" data-bs-toggle="tab"
                                 data-bs-target="#contact-tab-pane" type="button" role="tab"
-                                aria-controls="contact-tab-pane" aria-selected="false">Lookbook</button>
+                                aria-controls="contact-tab-pane" aria-selected="false">Lookbook
+                                </button>
                         </li>
                     </ul>
 
@@ -33,7 +36,9 @@ function Blog() {
                             <h1 className="fw-lighter mt-5 pt-3 fw-bolder text-danger titre"><span>Fashion</span></h1>
                             <div id="fashion" className="row mt-4 justify-content-center text-center mt-5">
                                 <div className="col-md-3">
-                                    <a href="#"><img src="images/enfant 1.jpg" alt="" className="img-fluid"/></a>
+                                    {/* <a href="#"><img src="images/enfant 1.jpg" alt="" className="img-fluid"/></a> */}
+                                    {/* <img src={require('./assets/images/enfant 1.jpg').default } alt="" className='img-fluid' /> */}
+
                                     <div className="py-3 text-dark">
                                         <h5 className="text-center text-dark">2021 STYLE GUIDE: THE BIGGEST FALL TRENDS
                                         </h5>
@@ -1661,7 +1666,7 @@ function Blog() {
 
         </div>
     </div>
-
+    </>
   );
 }
 
