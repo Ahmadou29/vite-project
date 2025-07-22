@@ -1,11 +1,11 @@
 /** @format */
 
 import { Routes, Route, Link } from 'react-router-dom';
-import './App.css';
-import Blog from './components/Blog';
+// import './App.css';
+// import Blog from './components/Blog';
 
 
-import { Routes, Route, Link } from 'react-router-dom';
+// import Categorie from './components/Categorie'; { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Categorie from './components/Categorie';
 
@@ -23,7 +23,7 @@ function App() {
 
         <Routes>
 
-          <Route path="/blog" element={<Blog />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
           {/* <Route path="/detail/:blog/:subBlog/:id" element={<ProductDetail />} /> */}
 
           <Route path="/" element={<Categorie />} />
