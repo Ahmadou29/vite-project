@@ -5,6 +5,8 @@ import { BsCart } from 'react-icons/bs';
 import { LuHeart, LuHeartOff } from 'react-icons/lu';
 import './Categorie.css';
 import { useCart } from './CartContext';
+import { IoEyeOutline } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 const imagesPerPage = 12;
 
@@ -14,6 +16,8 @@ const Categorie = () => {
   const [pages, setPages] = useState({});
   const { addToCart } = useCart();
   const [favorites, setFavorites] = useState({}); // ← un objet pour gérer les favoris par produit
+
+  const navigate = useNavigate();
 
   const key = `${category}-${subCategory}`;
   const images = galleries[key] || [];
@@ -102,23 +106,34 @@ const Categorie = () => {
                   style={{ objectFit: 'cover', height: '400px' }}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Produit {imageIndex}</h5>
+                  <h5 className="card-title">Product {imageIndex}</h5>
                   <p className="fw-bold text-success mb-2">
-                    Prix : {(20 + imageIndex).toFixed(2)} €
+                    Price: {(20 + imageIndex).toFixed(2)} $
                   </p>
                   <div className="d-flex justify-content-center">
                     <button
-                      className="btn btn-outline-danger me-2"
+                      className="btn btn-outline-danger me-1"
                       onClick={() => handleAddToCart(imageIndex)}
+                      style={{ fontSize: '13px' }}
                     >
-                      <BsCart /> Panier
+                      <BsCart /> Cart
                     </button>
 
                     <button
                       onClick={() => toggleFavorite(imageIndex)}
                       className={`btn ${isFav ? 'btn-danger' : 'btn-outline-danger'}`}
+                      style={{ fontSize: '13px' }}
                     >
-                      {isFav ? <LuHeart /> : <LuHeartOff />} Favoris
+                      {isFav ? <LuHeart /> : <LuHeartOff />} Favs
+                    </button>
+                    <button
+                      className="btn btn-outline-danger ms-1"
+                      style={{ fontSize: '13px' }}
+                      onClick={() =>
+                        navigate(`/detail/${category}/${subCategory}/${imageIndex}`)
+                      }
+                    >
+                      <IoEyeOutline /> Details
                     </button>
                   </div>
                 </div>
