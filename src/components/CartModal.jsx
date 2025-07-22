@@ -4,7 +4,6 @@ import { useCart } from './CartContext';
 const CartModal = ({ show, onClose }) => {
   const { cartItems, removeFromCart } = useCart();
 
-  //  Calcul du prix total
   const totalPrice = cartItems.reduce((total, item) => total + parseFloat(item.price), 0);
 
   return (
