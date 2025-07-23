@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import './TableShop.css';
 
 import image1 from '../assets/images/accessoires/accessoire-1.jpg';
 import image2 from '../assets/images/accessoires/accessoire-2.jpg';
@@ -34,7 +35,7 @@ import image26 from '../assets/images/homme/homme-6.jpg';
 import image27 from '../assets/images/homme/homme-7.jpg';
 import image28 from '../assets/images/homme/homme-8.jpg';
 import image29 from '../assets/images/homme/homme-9.jpg';
-import image30 from '../assets/images/homme/homme.jpg';
+import image30 from '../assets/images/homme/homme-10.jpg';
 
 const tabs = [
   { id: "fashion", label: "Fashion" },

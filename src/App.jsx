@@ -1,9 +1,9 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import "./components/TableShop.css";
  import TabsShop from './components/TabsShop';
 
-function App() {
-
+function App(){
   return (
     <>
     <Routes>
