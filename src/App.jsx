@@ -27,7 +27,7 @@
 
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./components/login";
+import Login from "./components/Login";
 import AdminDashboard from "./components/AdminDashboard";
 // import ProtectedRoute from "./components/ProtectedRoute";
 
