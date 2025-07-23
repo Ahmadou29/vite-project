@@ -47,7 +47,7 @@ const Detail2 = () => {
   };
 
   return (
-    <div className="checkout-container mt-5 pt-5 detail container">
+    <div className="checkout-container  py-5 detail container shadow">
       <h3 className="text-center">Checkout</h3>
 
       <div className="section-title">Shipping Address</div>
