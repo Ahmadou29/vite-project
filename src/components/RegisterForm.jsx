@@ -25,13 +25,14 @@ function RegisterForm() {
       });
 
       navigate("/accueil");
+      // too react
     } catch (error) {
       alert("Erreur lors de l'inscription : " + error.message);
     }
   };
 
   return (
-    <div className="container col-md-4 mt-5 shadows">
+    <div className="container col-md-4 mt-5 shadow p-5">
       <h3 className="text-center mb-4">CRÉER UN COMPTE</h3>
 
       <form onSubmit={handleRegister}>
@@ -73,7 +74,7 @@ function RegisterForm() {
       
 
       <p className="text-center">
-        Vous avez déjà un compte ? <Link to="/">Connectez-vous ici</Link>
+        Vous avez déjà un compte ? <Link to="/login">Connectez-vous ici</Link>
       </p>
     </div>
   );

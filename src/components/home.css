@@ -58,8 +58,8 @@ background-size: cover;
         height: 70px;
     }
 .nav-pills  .nav-link{
-        background-color:white ; 
-        color: #ccc8c8;
+        background-color:white !important; 
+        color: #ccc8c8 !important;
         font-weight: bold;
         font-size: 22px !important;
 
@@ -116,8 +116,8 @@ background-size: cover;
 }
 .low
 {
-    width: 200px;
-    height: 300px;
+    width: 200px !important;
+    height: 300px !important;
         transition: transform 0.3s ease;
 
 }
@@ -140,13 +140,3 @@ background-size: cover;
 
 }
 
-/* Authentification */
-/* .btn-orange {
-  background-color: #fd7e14;
-  color: white;
-  font-weight: bold;
-  border: none;
-}
-.btn-orange:hover {
-  background-color: #e96c0b;
-} */

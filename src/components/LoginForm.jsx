@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../config"; // configure ton Firebase ici
+import { auth } from "../config";
 import { useNavigate, Link } from "react-router-dom";
 import GoogleAuthButton from "./GoogleAuthButton";
+import { toast } from "react-toastify"; // ✅
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -13,15 +14,22 @@ function LoginForm() {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/"); // redirige après succès
+      toast.success("Connexion réussie !");
+      setTimeout(() => navigate("/"), 2000);
     } catch (error) {
-      alert("Erreur de connexion : " + error.message);
+      if (error.code === "auth/user-not-found") {
+        toast.error("Aucun compte trouvé avec cet e-mail.");
+      } else if (error.code === "auth/wrong-password") {
+        toast.error("Mot de passe incorrect.");
+      } else {
+        toast.error("Erreur : " + error.message);
+      }
     }
   };
 
   return (
-    <div className="container col-md-4 mt-5">
-      <h3 className="text-center mb-4">CONNEXION UTILISATEUR</h3>
+    <div className="container col-md-4 mt-5 p-4  shadow">
+      <h3 className="text-center mb-4 py-4">CONNEXION UTILISATEUR</h3>
 
       <form onSubmit={handleLogin}>
         <input
@@ -43,15 +51,13 @@ function LoginForm() {
         />
 
         <p className="text-center text-muted">Mot de passe oublié</p>
-
         <hr />
 
-        <button type="submit" className="btn btn-dark w-100 mb-2">
+        <button type="submit" className="btn btn-success w-100 mb-2">
           SE CONNECTER
         </button>
 
-       <GoogleAuthButton />
-
+        <GoogleAuthButton />
       </form>
 
       <hr />
@@ -65,4 +71,3 @@ function LoginForm() {
 }
 
 export default LoginForm;
-

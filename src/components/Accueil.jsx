@@ -69,7 +69,7 @@ function Accueil() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto me-5 nav1">
               <li className="nav-item">
-                 <Link className="nav-link active fs-5" to="/">Home</Link>
+                 <Link className="nav-link active fs-5" to="/accueil">Home</Link>
                 
               </li>
               <li className="nav-item">
@@ -89,7 +89,7 @@ function Accueil() {
               aria-label="Search"
             />
           </form>
-           <Link className="nav-link me-3 fs-5" to="/register">
+           <Link className="nav-link me-3 fs-5" to="/login">
            
           Se connecter
         </Link>
