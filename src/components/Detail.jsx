@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
+import accessImage from '../assets/image/kids-accessories-gallery/access1.jpg';
 
 const Detail = () => {
   const [quantity, setQuantity] = useState(1);
@@ -38,7 +39,7 @@ const Detail = () => {
       <h3 className="text-center">CHECKOUT</h3>
 
       <div className="product-info">
-        <img src="kids.jpg" alt="Produit" className="product-img" />
+        <img src={accessImage} alt="Produit" className="product-img" />
         <div>
           <h6 className="lameri">LAMEREI</h6>
           <small>{productName}</small>
