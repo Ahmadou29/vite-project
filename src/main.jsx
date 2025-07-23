@@ -1,16 +1,21 @@
-import { StrictMode } from 'react';
+// src/main.jsx
+import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom'; // ➡️ Import du router
+
+import App from './App';
+
 import './index.css';
-import App from './App.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter> {/* ➡️ Ajout du router autour de App */}
+  <React.StrictMode>
+    {/* <BrowserRouter> */}
+    
+    <div className="containe"> 
       <App />
-    </BrowserRouter>
-  </StrictMode>,
+    </div>
+    {/* </BrowserRouter> */}
+  </React.StrictMode>
 );
