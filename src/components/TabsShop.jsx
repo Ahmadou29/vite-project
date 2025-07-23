@@ -7,12 +7,17 @@ import image3 from '../assets/images/accessoires/accessoire-3.jpg';
 import image4 from '../assets/images/accessoires/accessoire-4.jpg';
 import image5 from '../assets/images/accessoires/accessoire-5.jpg';
 
+import image16 from '../assets/images/accessoires/accessoire-6.jpg';
+import image17 from '../assets/images/accessoires/accessoire-7.jpg';
+import image18 from '../assets/images/accessoires/accessoire-8.jpg';
+import image19 from '../assets/images/accessoires/accessoire-9.jpg';
+import image20 from '../assets/images/accessoires/accessoire-10.jpg';
+
 import image6 from '../assets/images/femmes/femme-1.jpg';
 import image7 from '../assets/images/femmes/femme-2.jpg';
 import image8 from '../assets/images/femmes/femme-3.jpg';
 import image9 from '../assets/images/femmes/femme-4.jpg';
 import image10 from '../assets/images/femmes/femme-5.jpg';
-
 
 import image11 from '../assets/images/femmes/femme-6.jpg';
 import image12 from '../assets/images/femmes/femme-7.jpg';
@@ -20,10 +25,16 @@ import image13 from '../assets/images/femmes/femme-8.jpg';
 import image14 from '../assets/images/femmes/femme-9.jpg';
 import image15 from '../assets/images/femmes/femme-10.jpg';
 
-// import image5 from '../assets/images/enfant/enfant-5.jpg';
-// import image2 from '../assets/images/enfant/enfant-2.jpg';
-// import image4 from '../assets/images/enfant/enfant-4.jpg';
-// import image7 from '../assets/images/enfant/enfant-7.jpg';
+import image21 from '../assets/images/homme/homme-1.jpg';
+import image22 from '../assets/images/homme/homme-2.jpg';
+import image23 from '../assets/images/homme/homme-3.jpg';
+import image24 from '../assets/images/homme/homme-4.jpg';
+import image25 from '../assets/images/homme/homme-5.jpg';
+import image26 from '../assets/images/homme/homme-6.jpg';
+import image27 from '../assets/images/homme/homme-7.jpg';
+import image28 from '../assets/images/homme/homme-8.jpg';
+import image29 from '../assets/images/homme/homme-9.jpg';
+import image30 from '../assets/images/homme/homme.jpg';
 
 const tabs = [
   { id: "fashion", label: "Fashion" },
@@ -49,6 +60,25 @@ const fashionItems = [
   { img: image13, price: 25 },
   { img: image14, price: 25 },
   { img: image15, price: 25 },
+
+   { img: image16, price: 25 },
+  { img: image17, price: 25 },
+  { img: image18, price: 25 },
+  { img: image19, price: 25 },
+  { img: image20, price: 25 },
+
+
+   { img: image21, price: 25 },
+  { img: image22, price: 25 },
+  { img: image23, price: 25 },
+  { img: image24, price: 25 },
+  { img: image25, price: 25 },
+
+   { img: image26, price: 25 },
+  { img: image27, price: 25 },
+  { img: image28, price: 25 },
+  { img: image29, price: 25 },
+  { img: image30, price: 25 },
 
   // { img: "images/femme (11).jpg", price: 20 },
   // { img: "images/femme (16).jpg", price: 18 },
