@@ -1,12 +1,9 @@
-
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth ,db} from "../config"; // Ton fichier Firebase
+import { auth, db } from "../config";
 import { useNavigate, Link } from "react-router-dom";
-import GoogleAuthButton from "./GoogleAuthButton";
+// import GoogleAuthButton from "./GoogleAuthButton";
 import { doc, setDoc } from "firebase/firestore";
-
-
 
 function RegisterForm() {
   const [email, setEmail] = useState("");
@@ -15,27 +12,26 @@ function RegisterForm() {
   const navigate = useNavigate();
 
   const handleRegister = async (e) => {
-  e.preventDefault();
-  try {
-    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-    const user = userCredential.user;
+    e.preventDefault();
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
 
-    // Enregistrer dans Firestore
-    await setDoc(doc(db, "users", user.uid), {
-      uid: user.uid,
-      email: user.email,
-      username: username,
-      createdAt: new Date()
-    });
+      await setDoc(doc(db, "users", user.uid), {
+        uid: user.uid,
+        email: user.email,
+        username: username,
+        createdAt: new Date()
+      });
 
-    navigate("/Accueil");
-  } catch (error) {
-    alert("Erreur lors de l'inscription : " + error.message);
-  }
-};
+      navigate("/accueil");
+    } catch (error) {
+      alert("Erreur lors de l'inscription : " + error.message);
+    }
+  };
 
   return (
-    <div className="container col-md-4 mt-5">
+    <div className="container col-md-4 mt-5 shadows">
       <h3 className="text-center mb-4">CRÉER UN COMPTE</h3>
 
       <form onSubmit={handleRegister}>
@@ -74,14 +70,13 @@ function RegisterForm() {
       </form>
 
       <hr />
+      
 
       <p className="text-center">
-        Vous avez déjà un compte ?{" "}
-        <Link to="/login">Connectez-vous ici</Link>
+        Vous avez déjà un compte ? <Link to="/">Connectez-vous ici</Link>
       </p>
     </div>
   );
 }
 
 export default RegisterForm;
-

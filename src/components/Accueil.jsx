@@ -19,63 +19,8 @@ import imgFemme18 from "../assets/images/femme (18).jpg";
 import imgFemme6 from "../assets/images/femme (6).jpg";
 import imgFemme18bis from "../assets/images/femme (18).jpg";
 import imgBody4 from "../assets/images/body4.webp";
-// import imgFemme18third from "../assets/images/femme (18).jpg";
-// import imgFemme18fourth from "../assets/images/femme (18).jpg";
-// import imgFemme18fifth from "../assets/images/femme (18).jpg";
-// import imgFemme18sixth from "../assets/images/femme (18).jpg";
+
 import imgGirl2Bag from "../assets/images/girl2-47d9e9b0.png";
-
-// import femme1 from '../assets/images/femme (10).jpg';
-// import homme9 from '../assets/images/homme 9.jpg';
-// import femme16 from '../assets/images/femme 2 (16).jpg';
-// import femme2 from '../assets/images/femme 2 (2).jpeg';
-// import femme4 from '../assets/images/femme 2 (4).webp';
-// import sacCabas from '../assets/images/sac-cabas.avif';
-// import sacMetallise from '../assets/images/sac_a_main_the_small_tote_cuir_metallise-1.avif';
-// import sacMoyen from '../assets/images/sac-moyen3.avif';
-// import girl2 from '../assets/images/girl2-47d9e9b0.png';
-// import body1 from '../assets/images/body.webp';
-// import body2 from '../assets/images/body2.webp';
-// import body3 from '../assets/images/body3.webp';
-// import body4 from '../assets/images/body4.webp';
-// import femme18 from '../assets/images/femme (18).jpg';
-// import femme6 from '../assets/images/femme (6).jpg';
-
-// const products = {
-//   All: [
-//     { src: femme1, title: 'WN reversible angora cardigan', price: 120 },
-//     { src: homme9, title: '21WN reversible angora cardigan', price: 120 },
-//     { src: sacCabas, title: 'BALMAIN sac Cavan', price: 120 },
-//     { src: sacMetallise, title: 'Sac cuir métallisé', price: 120 },
-//   ],
-//   Apparel: [
-//     { src: femme1, title: 'WN reversible angora cardigan', price: 120 },
-//     { src: homme9, title: '21WN reversible angora cardigan', price: 120 },
-//     { src: femme16, title: 'WN reversible angora cardigan', price: 120 },
-//     { src: femme18, title: 'Cardigan', price: 120 },
-//   ],
-//   Dress: [
-//     { src: femme2, title: 'WN reversible angora cardigan', price: 120 },
-//     { src: femme4, title: 'WN reversible angora cardigan', price: 120 },
-//     { src: femme18, title: 'WN reversible angora cardigan', price: 120 },
-//     { src: femme6, title: 'WN reversible angora cardigan', price: 120 },
-//   ],
-//   Tshirt: [
-//     { src: body1, title: 'WN reversible angora cardigan', price: 120 },
-//     { src: body2, title: '21WN reversible angora cardigan', price: 120 },
-//     { src: body3, title: 'WN reversible angora cardigan', price: 120 },
-//     { src: body4, title: 'WN reversible angora cardigan', price: 120 },
-//   ],
-//   Bag: [
-//     { src: sacCabas, title: 'BALMAIN sac Cavan', price: 120 },
-//     { src: sacMetallise, title: 'Cuir métallisé', price: 120 },
-//     { src: sacMoyen, title: 'Sac moyen cuir', price: 120 },
-//     { src: girl2, title: 'Oblong Bag', price: 120 },
-//   ],
-// };
-
-// const tabList = ['All', 'Apparel', 'Dress', 'Tshirt', 'Bag'];
-
 import prada from "../assets/images/prada-logo-black-and-white.png";
 import capture from "../assets/images/875-875-capture-d-e-cran-2018-08-03-a-13-18-47_c048605b21956f554a2635e60998754f.png";
 import boss from "../assets/images/boss-hugo-boss-logo-svg-vector.svg";
@@ -84,7 +29,6 @@ import gucci from "../assets/images/gucci-logo-png_seeklogo-64069.png";
 import tiffany from "../assets/images/tiffany-co-logo-png-transparent.png";
 import collect1 from "../assets/images/accuiel-collect1.jpg";
 import collect2 from "../assets/images/accuiel-collect2.jpg";
-  // const productImages = [girl1, girl2, girl3, girl3];
   const brandLogos = [prada, capture, boss, cartier, gucci, tiffany];
 import image29 from "../assets/images/girl4-a8b3d73f.png";
 import image30 from "../assets/images/girl4-a8b3d73f.png";
@@ -736,9 +680,17 @@ function Accueil() {
                 {n === 1 ? (
                   <>
                     <h1 className="display-1 fw-bold opacity-25 m-0 fs-2 text-white">10</h1>
-                    <h4 className="position-absolute top-50 start-50 translate-middle text-white fw-bold">
-                      October<br /><small className="fw-light fs-2">COLLECTION</small>
-                    </h4>
+                   
+                    <Link
+                      to="/collection-october"
+                      className="position-absolute top-50 start-50 translate-middle text-white fw-bold text-decoration-none"
+                    >
+                      <h4 className="m-0 text-white fw-bold">
+                        October<br />
+                        <small className="fw-light fs-2">COLLECTION</small>
+                      </h4>
+                    </Link>
+
                   </>
                 ) : (
                   <>
