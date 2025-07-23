@@ -1,20 +1,29 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import image1 from '../assets/images/accessoires/accessoire-1.jpg';
+import image2 from '../assets/images/accessoires/accessoire-2.jpg';
+import image3 from '../assets/images/accessoires/accessoire-3.jpg';
+import image4 from '../assets/images/accessoires/accessoire-4.jpg';
+import image5 from '../assets/images/accessoires/accessoire-5.jpg';
 
-import image1 from '../assets/images/femme-1.jpg';
- import image2 from '../assets/images/femme-1.jpg';
-//  import image4 from '../assets/images/femme-1.jpg';
-//  import image5 from '../assets/images/femme-1.jpg';
-//  import image2 from '../assets/images/femme-1.jpg';
-//  import image6 from '../assets/images/femme-1.jpg';
-//  import image7 from '../assets/images/femme-1.jpg';
-//  import image8 from '../assets/images/femme-1.jpg';
-//  import image9 from '../assets/images/femme-1.jpg';
-//  import image10 from '../assets/images/femme-1.jpg';
-//  import image11 from '../assets/images/femme-1.jpg';
-//  import image12 from '../assets/images/femme-1.jpg';
-//  import image13 from '../assets/images/femme-1.jpg';
+import image6 from '../assets/images/femmes/femme-1.jpg';
+import image7 from '../assets/images/femmes/femme-2.jpg';
+import image8 from '../assets/images/femmes/femme-3.jpg';
+import image9 from '../assets/images/femmes/femme-4.jpg';
+import image10 from '../assets/images/femmes/femme-5.jpg';
+
+
+import image11 from '../assets/images/femmes/femme-6.jpg';
+import image12 from '../assets/images/femmes/femme-7.jpg';
+import image13 from '../assets/images/femmes/femme-8.jpg';
+import image14 from '../assets/images/femmes/femme-9.jpg';
+import image15 from '../assets/images/femmes/femme-10.jpg';
+
+// import image5 from '../assets/images/enfant/enfant-5.jpg';
+// import image2 from '../assets/images/enfant/enfant-2.jpg';
+// import image4 from '../assets/images/enfant/enfant-4.jpg';
+// import image7 from '../assets/images/enfant/enfant-7.jpg';
 
 const tabs = [
   { id: "fashion", label: "Fashion" },
@@ -23,10 +32,26 @@ const tabs = [
 ];
   
 const fashionItems = [
-  { img: image2, price: 23, },
-  { img: image1, price: 25 },
-  { img: "images/femme (11).jpg", price: 20 },
-  { img: "images/femme (16).jpg", price: 18 },
+  { img: image1, price: 3, },
+  { img: image2, price: 25 },
+  { img: image3, price: 25 },
+  { img: image4, price: 25 },
+  { img: image5, price: 25 },
+
+  { img: image6, price: 25 },
+  { img: image7, price: 25 },
+  { img: image8, price: 25 },
+  { img: image9, price: 25 },
+  { img: image10, price: 25 },
+
+  { img: image11, price: 25 },
+  { img: image12, price: 25 },
+  { img: image13, price: 25 },
+  { img: image14, price: 25 },
+  { img: image15, price: 25 },
+
+  // { img: "images/femme (11).jpg", price: 20 },
+  // { img: "images/femme (16).jpg", price: 18 },
   // Ajoute les autres items Fashion ici selon ton HTML
 ];
 
