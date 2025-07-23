@@ -37,6 +37,31 @@ import image28 from '../assets/images/homme/homme-8.jpg';
 import image29 from '../assets/images/homme/homme-9.jpg';
 import image30 from '../assets/images/homme/homme-10.jpg';
 
+import image31 from '../assets/images/montre/montre-1.jpg';
+import image32 from '../assets/images/montre/montre-2.jpg';
+import image33 from '../assets/images/montre/montre-3.jpg';
+import image34 from '../assets/images/montre/montre-4.jpg';
+import image35 from '../assets/images/montre/montre-5.jpg';
+import image36 from '../assets/images/montre/montre-6.jpg';
+import image37 from '../assets/images/montre/montre-7.jpg';
+import image38 from '../assets/images/montre/montre-8.jpg';
+import image39 from '../assets/images/montre/montre-9.jpg';
+import image40 from '../assets/images/montre/montre-10.jpg';
+
+import image41 from '../assets/images/lunette/lunette-1.jpg';
+import image42 from '../assets/images/lunette/lunette-2.jpg';
+import image43 from '../assets/images/lunette/lunette-3.jpg';
+import image44 from '../assets/images/lunette/lunette-4.jpg';
+import image45 from '../assets/images/lunette/lunette-5.jpg';
+import image46 from '../assets/images/lunette/lunette-6.jpg';
+import image47 from '../assets/images/lunette/lunette-7.jpg';
+import image48 from '../assets/images/lunette/lunette-8.jpg';
+import image49 from '../assets/images/lunette/lunette-9.jpg';
+import image50 from '../assets/images/lunette/lunette-10.jpg';
+import image51 from '../assets/images/lunette/lunette-11.jpg';
+import image52 from '../assets/images/lunette/lunette-12.jpg';
+
+
 const tabs = [
   { id: "fashion", label: "Fashion" },
   { id: "promo", label: "Promo" },
@@ -74,12 +99,36 @@ const fashionItems = [
   { img: image23, price: 25 },
   { img: image24, price: 25 },
   { img: image25, price: 25 },
-
    { img: image26, price: 25 },
   { img: image27, price: 25 },
   { img: image28, price: 25 },
   { img: image29, price: 25 },
   { img: image30, price: 25 },
+
+    { img: image31, price: 25 },
+    { img: image32, price: 25 },
+    { img: image33, price: 25 },
+    { img: image34, price: 25 },
+    { img: image35, price: 25 },
+    { img: image36, price: 25 },
+    { img: image37, price: 25 },
+    { img: image38, price: 25 },
+    { img: image39, price: 25 }, 
+    { img: image40, price: 25 },  
+    
+      { img: image41, price: 25 },
+    { img: image42, price: 25 },
+    { img: image43, price: 25 },
+    { img: image44, price: 25 },
+    { img: image45, price: 25 },
+    { img: image46, price: 25 },
+    { img: image47, price: 25 },
+    { img: image48, price: 25 },
+    { img: image49, price: 25 }, 
+    { img: image50, price: 25 }, 
+    { img: image51, price: 25 },
+    { img: image52, price: 25 }, 
+
 
   // { img: "images/femme (11).jpg", price: 20 },
   // { img: "images/femme (16).jpg", price: 18 },
@@ -140,7 +189,6 @@ export default function TabsShop() {
 
       {/* Tab panes */}
       <div className="tab-content mt-4" id="shopTabsContent">
-        <h1>hhhhhhh</h1>
         {/* Fashion */}
         <div
           className={`tab-pane fade ${activeTab === "fashion" ? "show active" : ""}`}
