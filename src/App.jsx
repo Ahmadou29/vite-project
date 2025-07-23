@@ -1,38 +1,4 @@
 
-// import { Routes, Route } from 'react-router-dom';
-// import LoginPage from './pages/LoginPage';
-// import RegisterPage from './pages/RegisterPage';
-// import Accueil from './components/Accueil';
-// import { Routes, Route, Link } from 'react-router-dom';
-// import './App.css';
-// import Categorie from './components/Categorie';
-// import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
-// import { CartProvider } from './components/CartContext';
-// import ProductDetail from './components/ProductDetail';
-
-// function App() {
-//   return (
-//     <div>
-//       <CartProvider>
-//         <Navbar />
-//     <Routes>
-//       <Route path="/" element={<Accueil />} /> {/* ✅ racine = accueil */}
-//       <Route path="/login" element={<LoginPage />} />
-//       <Route path="/register" element={<RegisterPage />} />
-//        <Route path="/" element={<Categorie />} />
-//           <Route path="/detail/:category/:subCategory/:id" element={<ProductDetail />} />
-//           //  <Route path="/product" element={<ProductDetail />} />
-//     </Routes>
-//      <Footer />
-//       </CartProvider>
-//     </div>
-//   );
-// }
-
-
-// export default App;
-   
 
 import { Routes, Route, useLocation } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
@@ -44,6 +10,9 @@ import { CartProvider } from './components/CartContext';
 import ProductDetail from './components/ProductDetail';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Detail from './components/Detail.jsx'; 
+import Detail2 from './components/Detail2.jsx'; 
+import ModePayement from './components/modepayement.jsx';
 import Footer from './components/Footer';
 
 import './App.css';
@@ -67,6 +36,9 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/categorie" element={<Categorie />} /> {/* Corrigé */}
         <Route path="/detail/:category/:subCategory/:id" element={<ProductDetail />} />
+        <Route path="/" element={<Detail />} />
+      <Route path="/detail2" element={<Detail2 />} /> 
+      <Route path="/modepayement" element={<ModePayement />} /> 
         {/* <Route path="/product" element={<ProductDetail />} /> */}
       </Routes>
 
@@ -78,5 +50,7 @@ function App() {
   
   );
 }
+
+;
 
 export default App;

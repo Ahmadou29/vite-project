@@ -124,8 +124,8 @@
 // export default ProductDetail;
 /** @format */
 
-import React, { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React, { useState,} from 'react';
+import { useParams, useNavigate , Link } from 'react-router-dom';
 import { galleries } from '../utils/galleryImports';
 import { FaStar } from 'react-icons/fa6';
 import { FaStarHalfStroke } from 'react-icons/fa6';
@@ -201,9 +201,8 @@ const ProductDetail = () => {
           <button className="btn btn-danger" onClick={() => navigate(-1)}>
               Fermer
             </button>
-            <button className="btn btn-success" onClick={() => alert("Commande validée !")}>
-              Commander
-            </button>
+            <Link to="/detail2" className="btn btn-success">Commander</Link>
+           
             
           </div>
         </div>
