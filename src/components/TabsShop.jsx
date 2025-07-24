@@ -689,7 +689,7 @@ export default function TabsShop () {
 const [activeTab, setActiveTab] = useState("fashion");
 
 return (
-<div className="container">
+<div id="blog" className="container">
 <h1 className="text-danger fw-bolder">Blog</h1>
 {/* Nav tabs */}
 <ul className="nav nav-tabs mt-3" id="shopTabs" role="tablist">
@@ -791,6 +791,8 @@ aria-labelledby="lookbook-tab"
 </div>
 );
 }
+
+
 
 
 

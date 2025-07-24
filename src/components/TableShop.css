@@ -4,12 +4,12 @@
     /* border: 1px solid red; */
 }
 
-.nav-tabs{
+#blog .nav-tabs{
     text-align: center !important;
     justify-content: center !important;
 }
 
-.card img{
+#blog .card img{
     width: 40vh !important;
     height: 40vh !important;
     background-size: cover !important;
@@ -19,27 +19,27 @@
 }
 
 
-.nav-link{
+#blog .nav-link{
     color: black;
 }
 
-.nav-item{
+#blog .nav-item{
     border: none;
 }
 
 
-.nav-item{
+#blog .nav-item{
     margin: 0 10px;
 }
 
-.nav-item .nav-link{
+#blog .nav-item .nav-link{
     position: relative;
     font-size: 16px;
     font-weight: 500;
     display: inline-block;
 }
 
-.nav-item .nav-link::after{
+#blog .nav-item .nav-link::after{
     position: absolute;
     content: '';
     left: 0;
@@ -50,7 +50,7 @@
     bottom: 0;
 }
 
- .nav-item .nav-link.active::after,
+ #blog .nav-item .nav-link.active::after,
  .nav-item .nav-link:hover::after{
     width: 100%;
 }
