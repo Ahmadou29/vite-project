@@ -64,6 +64,8 @@ const Detail2 = () => {
       <div className="mb-3">
         <select className="form-select">
           <option>Pickup at store</option>
+          <option>Delivery</option>
+          
         </select>
       </div>
 
@@ -99,9 +101,7 @@ const Detail2 = () => {
         <span className="total-amount">${total || "0"}</span>
       </div>
 
-      <button className="btn btn-success mt-3" onClick={placeOrder}>
-        COMMANDER
-      </button>
+      <Link to="/success" className="btn btn-success mt-3">COMMANDER</Link>
     </div>
   );
 };
