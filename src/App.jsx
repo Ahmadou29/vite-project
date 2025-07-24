@@ -4,6 +4,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import Accueil from './components/Accueil';
+import TabsShop from './components/TabsShop';
 import Categorie from './components/Categorie';
 import Navbar from './components/Navbar';
 import { CartProvider } from './components/CartContext';
@@ -18,7 +19,7 @@ import Footer from './components/Footer';
 
 import './App.css';
 import "./components/TableShop.css";
- import TabsShop from './components/TabsShop';
+
 
 function App() {
   const location = useLocation();
@@ -37,7 +38,8 @@ function App() {
         
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="/categorie" element={<Categorie />} /> {/* Corrigé */}
+        <Route path="/categorie" element={<Categorie />} /> 
+         <Route path="/tabsShop" element={<TabsShop/>} /> 
         <Route path="/detail/:category/:subCategory/:id" element={<ProductDetail />} />
         <Route path="/" element={<Detail />} />
       <Route path="/detail2" element={<Detail2 />} /> 

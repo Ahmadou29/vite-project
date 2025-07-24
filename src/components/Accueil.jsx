@@ -4,45 +4,44 @@ import { Link } from "react-router-dom";
 
 import logo from "../assets/images/logo-removebg-preview (1).png";
 import imgFemme10 from "../assets/images/femmes/femme-10.jpg";
-import imgHomme9 from "../assets/images/homme 9.jpg";
-import imgFemme16 from "../assets/images/femme 2 (16).jpg";
-import imgFemme2_2 from "../assets/images/femme 2 (2).jpeg";
-import imgFemme4 from "../assets/images/femme 2 (4).webp";
-import imgGirl2 from "../assets/images/girl2-47d9e9b0.png";
+import imgHomme9 from "../assets/images/homme/homme-10.jpg";
+import imgFemme16 from "../assets/images/femmes/femme-16.jpg";
+import imgFemme2_2 from "../assets/images/femmes/femme-2.jpg";
+import imgFemme4 from "../assets/images/femmes/femme-32.jpg";
+import imgGirl2 from "../assets/images/femmes/femme-16.jpg";
 import imgSacCabas from "../assets/images/sac-cabas.avif";
 import imgSacTote from "../assets/images/sac_a_main_the_small_tote_cuir_metallise-1.avif";
 import imgSacMoyen3 from "../assets/images/sac-moyen3.avif";
 import imgBody from "../assets/images/body.webp";
 import imgBody2 from "../assets/images/body2.webp";
 import imgBody3 from "../assets/images/body3.webp";
-import imgFemme18 from "../assets/images/femme (18).jpg";
-import imgFemme6 from "../assets/images/femme (6).jpg";
-import imgFemme18bis from "../assets/images/femme (18).jpg";
-import imgBody4 from "../assets/images/body4.webp";
-
-import imgGirl2Bag from "../assets/images/girl2-47d9e9b0.png";
+import imgFemme18 from "../assets/images/femmes/femme-18.jpg";
+import imgFemme6 from "../assets/images/femmes/femme-23.jpg";
+import imgFemme18bis from "../assets/images/femmes/femme-18.jpg";
+import imgBody4 from "../assets/images/body4.webp"
+import imgGirl2Bag from "../assets/images/femmes/femme-10.jpg";
 import prada from "../assets/images/prada-logo-black-and-white.png";
 import capture from "../assets/images/875-875-capture-d-e-cran-2018-08-03-a-13-18-47_c048605b21956f554a2635e60998754f.png";
-import boss from "../assets/images/boss-hugo-boss-logo-svg-vector.svg";
+import boss from "../assets/images/cartier-2-logo-png-transparent.png";
 import cartier from "../assets/images/cartier-2-logo-png-transparent.png";
-import gucci from "../assets/images/gucci-logo-png_seeklogo-64069.png";
+import gucci from "../assets/images/cartier-2-logo-png-transparent.png";
 import tiffany from "../assets/images/tiffany-co-logo-png-transparent.png";
 import collect1 from "../assets/images/accuiel-collect1.jpg";
 import collect2 from "../assets/images/accuiel-collect2.jpg";
   const brandLogos = [prada, capture, boss, cartier, gucci, tiffany];
-import image29 from "../assets/images/girl4-a8b3d73f.png";
-import image30 from "../assets/images/girl4-a8b3d73f.png";
-import image31 from "../assets/images/girl4-a8b3d73f.png";
-import image32 from "../assets/images/girl4-a8b3d73f.png";
-import image33 from "../assets/images/girl4-a8b3d73f.png";
-import image34 from "../assets/images/girl4-a8b3d73f.png";
-import image35 from "../assets/images/girl4-a8b3d73f.png";
-import image36 from "../assets/images/girl4-a8b3d73f.png";
-import image37 from "../assets/images/girl4-a8b3d73f.png";
-import image38 from "../assets/images/girl4-a8b3d73f.png";
-import image39 from "../assets/images/girl4-a8b3d73f.png";
-import image40 from "../assets/images/girl4-a8b3d73f.png";
-import bw1 from "../assets/images/bw1.jpg";
+import image29 from "../assets/images/femmes/femme-14.jpg";
+import image30 from "../assets/images/femmes/femme-14.jpg";
+import image31 from "../assets/images/femmes/femme-14.jpg";
+import image32 from "../assets/images/femmes/femme-14.jpg";
+import image33 from "../assets/images/femmes/femme-14.jpg";
+import image34 from "../assets/images/femmes/femme-14.jpg";
+import image35 from "../assets/images/femmes/femme-14.jpg";
+import image36 from "../assets/images/femmes/femme-14.jpg";
+import image37 from "../assets/images/femmes/femme-14.jpg";
+import image38 from "../assets/images/femmes/femme-14.jpg";
+import image39 from "../assets/images/femmes/femme-14.jpg";
+import image40 from "../assets/images/femmes/femme-14.jpg";
+import bw1 from "../assets/images/femmes/femme-14.jpg";
 import bw2 from "../assets/images/bw2.jpeg";
 import bw3 from "../assets/images/bw3.jpeg";
 import bw4 from "../assets/images/bw4.jpg";
@@ -73,7 +72,7 @@ function Accueil() {
                 
               </li>
               <li className="nav-item">
-               <Link className="nav-link fs-5" to="/blog">Blog</Link>
+               <Link className="nav-link fs-5" to="/tabsShop">Blog</Link>
 
               </li>
               <li className="nav-item">
@@ -1108,58 +1107,7 @@ function Accueil() {
         </div>
       </section>
 
-      <footer className="mt-5">
-        <div className="container my-5 ">
-          <div className="row my-5 row-cols-1 row-cols-md-4 d-flex  justify-content-center ">
-            <div className="col text-center">
-              <div className="d-flex justify-content-evenly">
-                <a
-                  href="https://www.facebook.com/?locale=fr_FR"
-                  className="text-dark"
-                >
-                  <i className="bi bi-facebook fs-4"></i>
-                </a>
-
-                <a href="https://www.instagram.com/" className="text-dark">
-                  <i className="bi bi-instagram fs-4"></i>
-                </a>
-
-                <a href="" className="text-dark">
-                  {" "}
-                  <i className="bi bi-google fs-4"></i>
-                </a>
-              </div>
-              <div className="d-flex justify-content-center align-items-center mb-4 position-relative">
-                <hr className="w-50" />
-                <div className="ligne"></div>
-              </div>
-            </div>
-            <div className="col text-center">
-              <p>support@openui.design</p>
-              <p>+60 825 876</p>
-              <p>08:00 - 22:00 - Everyday</p>
-              <div className="d-flex justify-content-center align-items-center mb-4 position-relative">
-                <hr className="w-50" />
-                <div className="ligne"></div>
-              </div>{" "}
-            </div>
-            <div className="col text-center ">
-              <a href="" className="text-decoration-none text-dark">
-                About
-              </a>
-              <a href="" className="text-decoration-none text-dark ms-3">
-                Contact
-              </a>
-              <a href="" className="text-decoration-none text-dark ms-3">
-                Blog
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="bg-light">
-          <p className="text-center">Copyright© OpenUI All Rights Reserved.</p>
-        </div>
-      </footer>
+     
     </>
   );
 }
