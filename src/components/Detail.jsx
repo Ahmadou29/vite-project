@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
-import accessImage from '../assets/image/kids-accessories-gallery/access1.jpg';
+// import accessImage from '../assets/image/kids-accessories-gallery/access1.jpg';
 
 const Detail = () => {
   const [quantity, setQuantity] = useState(1);
