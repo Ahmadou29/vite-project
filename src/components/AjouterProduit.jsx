@@ -43,12 +43,14 @@
 //   );
 // }
 
+
+
 import React, { useState } from 'react';
 import { db } from './firebase'; 
 import { collection, addDoc } from "firebase/firestore";
 
 export default function AjouterProduit() {
-  const [produit, setProduit] = useState(''); // URL de la photo
+  const [produit, setProduit] = useState('');
   const [nom, setNom] = useState('');
   const [prix, setPrix] = useState('');
 
@@ -56,7 +58,7 @@ export default function AjouterProduit() {
     e.preventDefault();
     try {
       await addDoc(collection(db, "produits"), {
-        produit, // URL photo
+        produit,
         nom,
         prix: Number(prix),
         createdAt: new Date()
@@ -71,7 +73,15 @@ export default function AjouterProduit() {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginTop: '1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+    <form
+      onSubmit={handleSubmit}
+      style={{
+        marginTop: '1rem',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '0.5rem'
+      }}
+    >
       <input
         type="text"
         placeholder="URL de la photo"
@@ -93,7 +103,20 @@ export default function AjouterProduit() {
         onChange={(e) => setPrix(e.target.value)}
         required
       />
-      <button type="submit">Ajouter</button>
+      <button
+        type="submit"
+        style={{
+          backgroundColor: 'green',
+          color: '#fff',
+          padding: '10px 16px',
+          border: 'none',
+          borderRadius: '6px',
+          cursor: 'pointer',
+          fontWeight: 'bold'
+        }}
+      >
+        Ajouter
+      </button>
     </form>
   );
 }
