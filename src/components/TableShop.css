@@ -10,7 +10,11 @@
 }
 
 #blog .card img{
+<<<<<<< HEAD
     width: 40vh !important;
+=======
+    width: 36vh !important;
+>>>>>>> 726a19f850458e3bf3247bcf3183f38c6a33ee4a
     height: 40vh !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;

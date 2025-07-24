@@ -1,0 +1,142 @@
+
+.img-logo{
+    object-fit: cover;
+    width: 130px;
+    height: 80px;
+    /* padding: -25px 0px; */
+}
+/* SLIDE1 */
+.slide-1{
+background: url("../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp") ;
+background-size: cover;
+ background-repeat: no-repeat;
+ /* background-position: center; */
+
+
+} 
+ .slide-2{
+    background: url("../assets/images/seo-tips-for-fashion-e-commerce-website.webp") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center;    */
+
+} 
+.bouton-acc{
+     padding: 0.5rem 1.5rem !important;
+  opacity: 0.6;
+  backdrop-filter: blur(4px) !important;
+  border: none;
+}
+
+    /* opacity: 0.6; */
+
+    /* button scoll */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); 
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50%;
+}
+
+.image-menu{
+    
+    object-fit: cover;
+}
+.taille-petit{
+        font-size:18px;
+        color: #b1adad;
+    }
+        .image-menu {
+  height: 300px !important;      
+  width: 100% !important;         
+  object-fit: cover;   
+  display: block;      
+    }
+    .image-marque{
+        width: 120px;
+        height: 70px;
+    }
+.nav-pills  .nav-link{
+        background-color:white !important; 
+        color: #ccc8c8 !important;
+        font-weight: bold;
+        font-size: 22px !important;
+
+    }
+    .link-colect{
+        border-bottom:2px solid rgb(180, 177, 177) ;
+        margin-left: 20px;
+    }
+    .link-colect:hover{
+        border-bottom:2px solid rgb(215, 86, 36) ;   
+    }
+    .collections .nav-pills   .active{
+        color: #949090;
+    }
+    .ligne{
+        width: 12px; 
+        height : 12px; 
+        border: 1px solid #aaa; 
+        transform: rotate(45deg); 
+        background-color: white;
+         position: absolute;
+    }
+    .bouton-video{
+        width: 70px;
+         height: 70px;
+    }
+.imgs
+{
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+.hr
+{
+    width: 190px;
+}
+.fo
+{
+    width: 190px;
+}
+.imgs:hover {
+  transform: scale(1.05);
+}
+.pov{
+     height: 600px; 
+  
+}
+.log
+{
+    width: 150px;
+}
+.trend
+{
+    height: 400px;
+}
+.low
+{
+    width: 200px !important;
+    height: 300px !important;
+        transition: transform 0.3s ease;
+
+}
+.low:hover
+{
+    transform: scale(1.05);
+}
+.mi{
+    margin-top: -25px;
+}
+
+@media screen and (max-width: 720px) {
+    .trend {
+        height: 600px;
+    }
+    .pov{
+    height: 900px;
+  
+}
+
+}
+

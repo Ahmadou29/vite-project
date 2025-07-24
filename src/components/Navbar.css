@@ -1,0 +1,10 @@
+.img-logo{
+    object-fit: cover;
+    width: 130px;
+    height: 80px;
+    /* padding: -25px 0px; */
+}
+.nav2{
+    padding-top: 70px;
+  }
+

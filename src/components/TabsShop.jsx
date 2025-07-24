@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './TableShop.css';
 
-import image1 from '../assets/images/accessoires/accessoire-1.jpg';
-import image2 from '../assets/images/accessoires/accessoire-2.jpg';
-import image3 from '../assets/images/accessoires/accessoire-3.jpg';
-import image4 from '../assets/images/accessoires/accessoire-4.jpg';
-import image5 from '../assets/images/accessoires/accessoire-5.jpg';
+import image1 from '../assets/images/accessories/accessoire-1.jpg';
+import image2 from '../assets/images/accessories/accessoire-2.jpg';
+import image3 from '../assets/images/accessories/accessoire-3.jpg';
+import image4 from '../assets/images/accessories/accessoire-4.jpg';
+import image5 from '../assets/images/accessories/accessoire-5.jpg';
 
-import image16 from '../assets/images/accessoires/accessoire-6.jpg';
-import image17 from '../assets/images/accessoires/accessoire-7.jpg';
-import image18 from '../assets/images/accessoires/accessoire-8.jpg';
-import image19 from '../assets/images/accessoires/accessoire-9.jpg';
-import image20 from '../assets/images/accessoires/accessoire-10.jpg';
+import image16 from '../assets/images/accessories/accessoire-6.jpg';
+import image17 from '../assets/images/accessories/accessoire-7.jpg';
+import image18 from '../assets/images/accessories/accessoire-8.jpg';
+import image19 from '../assets/images/accessories/accessoire-9.jpg';
+import image20 from '../assets/images/accessories/accessoire-10.jpg';
 
 import image6 from '../assets/images/femmes/femme-1.jpg';
 import image7 from '../assets/images/femmes/femme-2.jpg';
@@ -334,7 +334,7 @@ oldPrice: 15.5,
 {
 img: "src/assets/images/femmes/femme-28.jpg",
 newPrice: 10,
-oldPrice: 15.5,
+oldPrice: 15.20,
 },
 
 {
@@ -388,43 +388,43 @@ oldPrice: 15.5,
 
 
 {
-img: "src/assets/images/accessoires/accessoire-11.jpg",
+img: "src/assets/images/accessories/accessoire-11.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-12.jpg",
+img: "src/assets/images/accessories/accessoire-12.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-13.jpg",
+img: "src/assets/images/accessories/accessoire-13.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-14.jpg",
+img: "src/assets/images/accessories/accessoire-14.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-15.jpg",
+img: "src/assets/images/accessories/accessoire-15.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-16.jpg",
+img: "src/assets/images/accessories/accessoire-16.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-17.jpg",
+img: "src/assets/images/accessories/accessoire-17.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
@@ -618,18 +618,18 @@ const lookbookItems = [
 {img: "src/assets/images/homme/homme-17.jpg",},
 {img: "src/assets/images/homme/homme-1.jpg",},
 {img: "src/assets/images/homme/homme-19.jpg",},
-{img: "src/assets/images/accessoires/accessoire-7.jpg",},
-{img: "src/assets/images/accessoires/accessoire-1.jpg",},
+{img: "src/assets/images/accessories/accessoire-7.jpg",},
+{img: "src/assets/images/accessories/accessoire-1.jpg",},
 {img: "src/assets/images/homme/homme-10.jpg",},
-{img: "src/assets/images/accessoires/accessoire-11.jpg",},
-{img: "src/assets/images/accessoires/accessoire-8.jpg",},
+{img: "src/assets/images/accessories/accessoire-11.jpg",},
+{img: "src/assets/images/accessories/accessoire-8.jpg",},
 {img: "src/assets/images/homme/homme-16.jpg",},
 {img: "src/assets/images/lunette/lunette-12.jpg",},
 {img: "src/assets/images/lunette/lunette-13.jpg",},
 {img: "src/assets/images/lunette/lunette-14.jpg",},
 {img: "src/assets/images/lunette/lunette-1.jpg",},
-{img: "src/assets/images/accessoires/accessoire-10.jpg",},
-{img: "src/assets/images/accessoires/accessoire-12.jpg",},
+{img: "src/assets/images/accessories/accessoire-10.jpg",},
+{img: "src/assets/images/accessories/accessoire-12.jpg",},
 {img: "src/assets/images/homme/homme-20.jpg",},
 {img: "src/assets/images/femmes/femme-19.jpg",},
 {img: "src/assets/images/femmes/femme-10.jpg",},
@@ -637,10 +637,10 @@ const lookbookItems = [
 {img: "src/assets/images/homme/homme-2.jpg",},
 {img: "src/assets/images/femmes/femme-17.jpg",},
 {img: "src/assets/images/montre/montre-2.jpg",},
-{img: "src/assets/images/accessoires/accessoire-13.jpg",},
+{img: "src/assets/images/accessories/accessoire-13.jpg",},
 {img: "src/assets/images/homme/homme-17.jpg",},
 {img: "src/assets/images/montre/montre-10.jpg",},
-{img: "src/assets/images/accessoires/accessoire-14.jpg",},
+{img: "src/assets/images/accessories/accessoire-14.jpg",},
 {img: "src/assets/images/montre/montre-12.jpg",},
 {img: "src/assets/images/montre/montre-5.jpg",},
 {img: "src/assets/images/montre/montre-4.jpg",},
@@ -720,17 +720,16 @@ role="tabpanel"
 aria-labelledby="fashion-tab"
 >
 <div className="row">
-{fashionItems.map(({ img, texte }, idx) => (
+{fashionItems.map(({ img }, idx) => (
 <div key={idx} className="col-md-3 py-3">
 <div className="card shadow-lg p-3">
 <a href="#">
 <img src={img} alt="fashion item" className="card-img-top" />
 </a>
 <div className="card-body">
-<h5 className="card-title text-danger">2021 STYLE GUIDE: THE BIGGEST FALL TRENDS</h5>
+<h5 className="card-title fs-6 fw-lighter text-center text-danger">2021 STYLE GUIDE: THE BIGGEST FALL TRENDS</h5>
 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-possimus animi quae
-quasi, unde excepturi!</p>
+possimus animi quae.</p>
 </div>
 </div>
 </div>
@@ -769,17 +768,16 @@ role="tabpanel"
 aria-labelledby="lookbook-tab"
 >
 <div className="row">
-{lookbookItems.map(({ img, texte }, idx) => (
+{lookbookItems.map(({ img }, idx) => (
 
 <div key={idx} className="card col-md-3 py-3">
 <a href="#">
 <img src={img} alt="lookbook item" className="img-fluid" />
 </a>
 
-
 <div className=" py-3 shadow-lg">
-<span className="fw-bold text-danger">5 FALL LOOKS I'M LOVING</span>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt rerum, magnam neque sed repellendus maiores.</p>
+<span className="card-title fs-6 fw-lighter text-danger text-center">5 FALL LOOKS I'M LOVING</span>
+<p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt rerum.</p>
 </div>
 </div>
 ))}
@@ -792,210 +790,3 @@ aria-labelledby="lookbook-tab"
 );
 }
 
-
-
-
-
-{/* import React from 'react';
- import 'bootstrap/dist/css/bootstrap.min.css';
-import { Tab, Tabs } from 'react-bootstrap';
-
-const EcommerceFashion = () => { */}
-{/* Données pour la section Fashion
-const fashionProducts = [
-Enfants
-{  */}
-{/* // id: 1, 
-// img: "images/enfant 1.jpg", 
-// title: "2021 STYLE GUIDE: THE BIGGEST FALL TRENDS", 
-// desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum possimus animi quae quasi, unde excepturi!", 
-// texte: "$5.95",
-// category: "enfant"
-// },
-// {  */}
-{/* // id: 2,  */}
-{/* // img: "images/enfant 12.jpg",  */}
-{/* // title: "2021 STYLE GUIDE: THE BIGGEST FALL TRENDS",  */}
-{/* // desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum possimus animi quae quasi, unde excepturi!",  */}
-{/* // texte: "$14.95", */}
-{/* // category: "enfant" */}
-// },
-{/* // // Ajoutez tous les autres produits enfants ici... */}
-
-{/* // // Hommes */}
-// { 
-// id: 101, 
-// img: "images/homme 7.jpg", 
-// title: "5 FALL LOOKS I'M LOVING", 
-// desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt rerum, magnam neque sed repellendus maiores.", 
-// texte: "$9.95",
-// category: "homme"
-// },
-// // Ajoutez tous les autres produits hommes ici...
-
-// // Femmes
-// { 
-// id: 201, 
-// img: "images/femme (4).jpg", 
-// title: "5 FALL LOOKS I'M LOVING", 
-// desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt rerum, magnam neque sed repellendus maiores.", 
-// texte: "$9.95",
-// category: "femme"
-// },
-// // Ajoutez tous les autres produits femmes ici...
-
-// // Accessoires
-// { 
-// id: 301, 
-// img: "images/lunettes (10).jpg", 
-// title: "5 FALL LOOKS I'M LOVING", 
-// desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt rerum, magnam neque sed repellendus maiores.", 
-// texte: "$9.95",
-// category: "accessoire"
-// },
-// // Ajoutez tous les autres produits accessoires ici...
-// ];
-
-// // Données pour la section Promo
-// const promoProducts = [
-// {
-// id: 1001,
-// img: "images/pexels-charles-parker-5859674.jpg",
-// oldPrice: "$20",
-// newPrice: "$10"
-// },
-// {
-// id: 1002,
-// img: "images/pexels-krishna-kids-photography-2148372889-32902105.jpg",
-// oldPrice: "$100",
-// newPrice: "$50"
-// },
-// // Ajoutez tous les autres produits en promo ici...
-// ];
-
-// return (
-// <section id="blog" className="text-center bg-purple">
-// <div className="container-fluid">
-// <div className="row">
-// <div className="col-12">
-// <Tabs
-// defaultActiveKey="fashion"
-// id="uncontrolled-tab-example"
-// className="nav-tabs justify-content-center fixed-top bg-white mb-3"
-// >
-// <Tab eventKey="fashion" title="Fashion">
-// <h1 className="fw-lighter mt-5 pt-3 fw-bolder text-danger titre">Fashion</h1>
-
-// {/* Section Enfants */}
-// <div className="row mt-4 justify-content-center text-center">
-// {fashionProducts
-// .filter(product => product.category === "enfant")
-// .map(product => (
-// <div className="col-md-3 mb-4" key={product.id}>
-// <a href="#">
-// <img src={product.img} alt={product.title} className="img-fluid" />
-// </a>
-// <div className="py-3 text-dark">
-// <h5 className="text-center text-dark">{product.title}</h5>
-// <p className="fs-5">{product.desc}</p>
-// <span className="fw-bold text-danger">{product.texte}</span>
-// </div>
-// </div>
-// ))}
-// </div>
-
-// {/* Section Hommes */}
-// <h1 className="titre">Homme</h1>
-// <div className="row mt-4 justify-content-center text-center">
-// {fashionProducts
-// .filter(product => product.category === "homme")
-// .map(product => (
-// <div className="col-md-3 mb-4" key={product.id}>
-// <a href="#">
-// <img src={product.img} alt={product.title} className="img-fluid" />
-// </a>
-// <div className="py-3 text-dark">
-// <h5 className="text-center text-dark">{product.title}</h5>
-// <p className="fs-5">{product.desc}</p>
-// <span className="fw-bold text-danger">{product.texte}</span>
-// </div>
-// </div>
-// ))}
-// </div>
-
-// {/* Section Femmes */}
-// <h1 className="titre">Femmes</h1>
-// <div className="row mt-4 justify-content-center text-center">
-// {fashionProducts
-// .filter(product => product.category === "femme")
-// .map(product => (
-// <div className="col-md-3 mb-4" key={product.id}>
-// <a href="#">
-// <img src={product.img} alt={product.title} className="img-fluid" />
-// </a>
-// <div className="py-3 text-dark">
-// <h5 className="text-center text-dark">{product.title}</h5>
-// <p className="fs-5">{product.desc}</p>
-// <span className="fw-bold text-danger">{product.texte}</span>
-// </div>
-// </div>
-// ))}
-// </div>
-
-// {/* Section Accessoires */}
-// <h1 className="titre">Accessoires</h1>
-// <div className="row mt-4 justify-content-center text-center">
-// {fashionProducts
-// .filter(product => product.category === "accessoire")
-// .map(product => (
-// <div className="col-md-3 mb-4" key={product.id}>
-// <a href="#">
-// <img src={product.img} alt={product.title} className="img-fluid" />
-// </a>
-// <div className="py-3 text-dark">
-// <h5 className="text-center text-dark">{product.title}</h5>
-// <p className="fs-5">{product.desc}</p>
-// <span className="fw-bold text-danger">{product.texte}</span>
-// </div>
-// </div>
-// ))}
-// </div>
-// </Tab>
-
-// <Tab eventKey="promo" title="Promo">
-// <h1 className="fw-lighter mt-5 py-3 fw-bolder text-danger titre">Promo</h1>
-// <div className="row">
-// <div className="row row-cols-1 g-2">
-// {promoProducts.map(product => (
-// <div className="col-md-3 py-2" key={product.id}>
-// <div className="card shadow-lg p-3">
-// <a href="#">
-// <img src={product.img} className="card-img-top" alt="Produit en promotion" />
-// </a>
-// <div className="card-body">
-// <h5 className="card-title text-decoration-line-through">{product.oldPrice}</h5>
-// <p className="card-text text-danger">{product.newPrice}</p>
-// </div>
-// </div>
-// </div>
-// ))}
-// </div>
-// </div>
-// </Tab>
-
-// <Tab eventKey="lookbook" title="Lookbook">
-// <h1 className="fw-lighter mt-5 py-3 fw-bolder text-danger titre">Lookbook</h1>
-// <div className="row">
-// {/* Ajoutez ici le contenu de votre lookbook */}
-// <p className="text-center">Contenu du lookbook à venir...</p>
-// </div>
-// </Tab>
-// </Tabs>
-// </div>
-// </div>
-// </div>
-// </section>
-// );
-// };
-
-// export default EcommerceFashion;
