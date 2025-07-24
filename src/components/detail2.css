@@ -1,0 +1,99 @@
+.detail {
+  max-width: 480px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.detail h3 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  border-left: 4px solid #28a745;
+  padding-left: 8px;
+}
+
+.info-box {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.form-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color .2s;
+}
+.form-select:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 0 2px rgba(40,167,69,0.2);
+}
+
+.payment-link {
+  margin-bottom: 16px;
+}
+
+.payment-link a {
+  display: inline-block;
+  color: #fff;
+  background: #28a745;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background .2s;
+}
+.payment-link a:hover {
+  background: #218838;
+}
+
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e9f7ef;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 16px;
+}
+
+.total-amount {
+  font-size: 1.2rem;
+  color: #28a745;
+}
+
+.btn-commander {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #28a745, #218838);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .3s, transform .1s;
+  margin-top: 24px;
+}
+.btn-commander:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  transform: translateY(-2px);
+}
+.btn-commander:active {
+  transform: translateY(0);
+}

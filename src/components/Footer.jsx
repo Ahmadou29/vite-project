@@ -3,8 +3,8 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className='container-fluid anta'>
-    <footer className="mt-5 ">
+    <div className='container-fluid anta p-2 shadow-lg'>
+    <footer className="mt-5">
     <div className="container my-5 ">
       <div className="row my-5 row-cols-1 row-cols-md-4 d-flex  justify-content-center ">
         <div className="col text-center">

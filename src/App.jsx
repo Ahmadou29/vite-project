@@ -25,7 +25,7 @@ function App() {
   const location = useLocation();
 
   // chemins où on ne veut pas afficher le navbar/footer
-  const hideLayoutRoutes = ['/login', '/register' , '/admin'];
+  const hideLayoutRoutes = ['/login', '/register' , '/admin','/detail2'];
   const hideLayout = hideLayoutRoutes.includes(location.pathname);
   return (
      <CartProvider>
@@ -35,7 +35,7 @@ function App() {
                                   *
       <Routes>
         <Route path="/" element={<Accueil />} /> {/* Page d'accueil */}
-        
+        <Route path="/accueil" element={<Accueil />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/categorie" element={<Categorie />} /> 

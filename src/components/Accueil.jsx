@@ -1,7 +1,13 @@
-import React from "react";
+// import React,{UseState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
+
+
+
 import './home.css';
 import { Link } from "react-router-dom";
-
+import { onAuthStateChanged, signOut, } from "firebase/auth"; // ✅ depuis Firebase
+import { auth } from "../config"; 
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/images/logo-removebg-preview (1).png";
 import imgFemme10 from "../assets/images/femmes/femme-10.jpg";
 import imgHomme9 from "../assets/images/homme/homme-10.jpg";
@@ -29,24 +35,44 @@ import tiffany from "../assets/images/tiffany-co-logo-png-transparent.png";
 import collect1 from "../assets/images/accuiel-collect1.jpg";
 import collect2 from "../assets/images/accuiel-collect2.jpg";
   const brandLogos = [prada, capture, boss, cartier, gucci, tiffany];
-import image29 from "../assets/images/femmes/femme-14.jpg";
-import image30 from "../assets/images/femmes/femme-14.jpg";
-import image31 from "../assets/images/femmes/femme-14.jpg";
-import image32 from "../assets/images/femmes/femme-14.jpg";
+import image29 from "../assets/images/femmes/femme-1.jpg";
+import image30 from "../assets/images/femmes/femme-3.jpg";
+import image31 from "../assets/images/femmes/femme-5.jpg";
+import image32 from "../assets/images/femmes/femme-4.jpg";
 import image33 from "../assets/images/femmes/femme-14.jpg";
-import image34 from "../assets/images/femmes/femme-14.jpg";
-import image35 from "../assets/images/femmes/femme-14.jpg";
-import image36 from "../assets/images/femmes/femme-14.jpg";
-import image37 from "../assets/images/femmes/femme-14.jpg";
-import image38 from "../assets/images/femmes/femme-14.jpg";
-import image39 from "../assets/images/femmes/femme-14.jpg";
-import image40 from "../assets/images/femmes/femme-14.jpg";
-import bw1 from "../assets/images/femmes/femme-14.jpg";
+import image34 from "../assets/images/femmes/femme-15.jpg";
+import image35 from "../assets/images/femmes/femme-10.jpg";
+import image36 from "../assets/images/femmes/femme-11.jpg";
+import image37 from "../assets/images/femmes/femme-7.jpg";
+import image38 from "../assets/images/femmes/femme-16.jpg";
+import image39 from "../assets/images/femmes/femme-2.jpg";
+import image40 from "../assets/images/femmes/femme-9.jpg";
+import bw1 from "../assets/images/bw1.jpg";
 import bw2 from "../assets/images/bw2.jpeg";
 import bw3 from "../assets/images/bw3.jpeg";
 import bw4 from "../assets/images/bw4.jpg";
 // import image31 from "../assets/images/girl4-a8b3d73f.png";
 function Accueil() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+      const navigate = useNavigate();
+useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setIsLoggedIn(!!user);
+    });
+
+    return () => unsubscribe(); // nettoyage
+  }, []);
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate("/login");
+    } catch (error) {
+      console.error("Erreur de déconnexion :", error.message);
+    }
+  };
+ 
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
@@ -65,8 +91,8 @@ function Accueil() {
           >
             <span className="navbar-toggler-icon "></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto me-5 nav1">
+          <div className="collapse navbar-collapse justify-content-center d-flex  " id="navbarSupportedContent">
+            <ul className="navbar-nav nav1">
               <li className="nav-item">
                  <Link className="nav-link active fs-5" to="/accueil">Home</Link>
                 
@@ -81,17 +107,20 @@ function Accueil() {
             </ul>
           </div>
           <form className="d-flex" role="search">
-            <input
-              className="form-control me-3"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
+            
           </form>
-           <Link className="nav-link me-3 fs-5" to="/login">
-           
-          Se connecter
-        </Link>
+          {isLoggedIn ? (
+            <button
+              onClick={handleLogout}
+              className="btn btn-outline-danger ms-2 me-3"
+            >
+              Déconnexion
+            </button>
+          ) : (
+            <Link className="nav-link me-3 fs-5" to="/login">
+              Se connecter
+            </Link>
+          )}
           <a className="nav-link fs-5" href="#">
             <i className="bi bi-cart"></i>
           </a>
@@ -109,14 +138,14 @@ function Accueil() {
               className="carousel-item  text-center  vh-100 slide-1 active w-100"
               data-bs-interval="10000"
             >
-              <div className="container  h-100 d-flex align-items-center justify-content-center">
+              <div className="container  vh-100 d-flex align-items-center justify-content-center">
                 <div className="row justify-content-center">
                   <div className="col-md-8">
-                    <h1 className="display-1 fw-bold text-dark">
+                    <h1 className="display-1 fw-bold text-white">
                       Luxury Fashion & Accessoires
                     </h1>
                     <a
-                      href="#"
+                      href="#collection"
                       className="btn btn-navbar rounded-pill bouton-acc   bg-dark fs-3 text-white d-flex justify-content-center align-items-center"
                     >
                       Explore collections
@@ -129,10 +158,10 @@ function Accueil() {
               className="carousel-item  text-center  slide-2  vh-100 w-100"
               data-bs-interval="2000"
             >
-              <div className="container  h-100 d-flex align-items-center justify-content-center">
+              <div className="container  vh-100 d-flex align-items-center justify-content-center">
                 <div className="row justify-content-center">
                   <div className="col-md-8">
-                    <h1 className="display-1 fw-bold text-dark">
+                    <h1 className="display-1 fw-bold text-white">
                       Luxury Fashion & Accessoires
                     </h1>
                    <a
@@ -178,7 +207,7 @@ function Accueil() {
 
 
 
-    <div className="container mt-5">
+    <div className="container py-5">
       <h2 className="text-center text-uppercase">New Arrival</h2>
       <div className="d-flex justify-content-center align-items-center mb-4 position-relative">
         <hr className="w-25" />
@@ -846,9 +875,9 @@ function Accueil() {
                       alt="..."
                     />
                     <div className="text-center">
-                      <h4 className=" text-center mb-0">
+                      <h6 className=" text-center mb-0">
                         Harris tweed Three button
-                      </h4>
+                      </h6>
                       <p className="card-text mb-0">Jacket</p>
                       <p className="mb-0 text-warning">$120</p>
                     </div>

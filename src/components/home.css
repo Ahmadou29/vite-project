@@ -7,17 +7,17 @@
 }
 /* SLIDE1 */
 .slide-1{
-background: url("../assets/images/beautiful-young-asian-teen-seller-260nw-2362989449.webp") ;
-background-size: cover;
- background-repeat: no-repeat;
+background: url("../assets/images/background-1.jpg") !important;
+background-size: cover !important;
+ background-repeat: no-repeat !important;
  /* background-position: center; */
 
 
 } 
  .slide-2{
-    background: url("../assets/images/seo-tips-for-fashion-e-commerce-website.webp") ;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("../assets/images/seo-tips-for-fashion-e-commerce-website.webp") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
     /* background-position: center;    */
 
 } 
@@ -34,8 +34,8 @@ background-size: cover;
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.5); 
-  width: 70px !important;
-  height: 70px !important;
+  width: 60px !important;
+  height: 60px !important;
   border-radius: 50%;
 }
 
@@ -88,7 +88,7 @@ background-size: cover;
     }
 .imgs
 {
-    width: 300px;
+    width: 300px !important;
     transition: transform 0.3s ease;
 }
 .hr

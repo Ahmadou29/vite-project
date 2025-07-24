@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import './Detail2.css'; // fichier CSS séparé
 
 const Detail2 = () => {
+  // état
   const [produit, setProduit] = useState('');
   const [quantite, setQuantite] = useState('');
   const [total, setTotal] = useState('');
@@ -18,8 +19,7 @@ const Detail2 = () => {
   }, []);
 
   const handlePaymentChange = (e) => {
-    const selected = e.target.value;
-    setPaymentMethod(selected);
+    setPaymentMethod(e.target.value);
   };
 
   const placeOrder = () => {
@@ -30,9 +30,7 @@ const Detail2 = () => {
 
     fetch("http://localhost:3000/valider-commande", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ produit, quantite, total })
     })
       .then(res => res.json())
@@ -40,66 +38,54 @@ const Detail2 = () => {
         alert(data.message);
         localStorage.clear();
       })
-      .catch(err => {
-        console.error(err);
-        alert("Erreur lors de l'envoi de la commande");
-      });
+      .catch(() => alert("Erreur lors de l'envoi de la commande"));
   };
 
   return (
-    <div className="checkout-container  py-5 detail container shadow">
-      <h3 className="text-center">Checkout</h3>
+    <div className="checkout-container detail">
+      <h3>Checkout</h3>
 
-      <div className="section-title">Shipping Address</div>
-      <div className="mb-2">
+      <div className="section-title">Adresse de livraison</div>
+      <div className="info-box">
         <strong>Iris Watson</strong><br />
         <small>
-          606-3727 Ullamcorper Street<br />
-          Roseville NH 11523<br />
-          (786) 713-8616
+         606‑3727 Ullamcorper Street<br />
+         Roseville NH 11523<br />
+         (786) 713‑8616
         </small>
       </div>
 
-      <div className="section-title mt-3">Shipping Method</div>
-      <div className="mb-3">
-        <select className="form-select">
-          <option>Pickup at store</option>
-        </select>
-      </div>
+      <div className="section-title">Mode de livraison</div>
+      <select className="form-select">
+        <option>Pickup en magasin</option>
+      </select>
 
-      <div className="section-title">Payment Method</div>
-      <div className="mb-3">
-        <select className="form-select" onChange={handlePaymentChange}>
-          <option value="">Select payment method</option>
-          <option value="wave ou orange money">wave ou orange money</option>
-          <option value="paypal">PayPal</option>
-        </select>
-      </div>
-
-      {paymentMethod === "wave ou orange money" && (
-        <div className="mt-2">
-          <a
-            href="modepayement"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Accéder au paiement Wave ou Orange Money
+      <div className="section-title">Mode de paiement</div>
+      <select className="form-select" onChange={handlePaymentChange}>
+        <option value="">Choisissez un mode de paiement</option>
+        <option value="wave">Wave / Orange Money</option>
+        <option value="paypal">PayPal</option>
+      </select>
+      {paymentMethod === "wave" && (
+        <div className="payment-link">
+          <a href="/modepayement" target="_blank" rel="noopener noreferrer">
+            Payer avec Wave / Orange Money
           </a>
         </div>
       )}
 
-      <div className="section-title">Order Summary</div>
-      <div className="mb-2">
+      <div className="section-title">Récapitulatif de la commande</div>
+      <div className="info-box">
         <div><strong>{produit || "Produit"}</strong></div>
-        <small>Quantité : <span>{quantite || "1"}</span></small>
+        <small>Quantité : {quantite || "1"}</small>
       </div>
 
-      <div className="total-section mt-2">
+      <div className="total-section">
         <span><strong>TOTAL</strong></span>
         <span className="total-amount">${total || "0"}</span>
       </div>
 
-      <button className="btn btn-success mt-3" onClick={placeOrder}>
+      <button className="btn-commander" onClick={placeOrder}>
         COMMANDER
       </button>
     </div>

@@ -1,5 +1,7 @@
 import React from 'react';
 import { useCart } from './CartContext';
+import { Link} from 'react-router-dom';
+
 
 const CartModal = ({ show, onClose }) => {
   const { cartItems, removeFromCart } = useCart();
@@ -29,7 +31,7 @@ const CartModal = ({ show, onClose }) => {
                   <li key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
                     <div>
                       <strong>{item.name}</strong><br />
-                      <span>{item.price} €</span>
+                      <span>  ${item.price} </span>
                     </div>
                     <button
                       className="btn btn-sm btn-danger"
@@ -43,12 +45,12 @@ const CartModal = ({ show, onClose }) => {
             )}
           </div>
           <div className="modal-footer d-flex justify-content-between w-100">
-            <strong className="me-auto">Total : {totalPrice.toFixed(2)} €</strong>
+            <strong className="me-auto">Total : $ {totalPrice.toFixed(2)}  </strong>
             <div>
               <button className="btn btn-secondary me-2" onClick={onClose}>Fermer</button>
-              <button className="btn btn-primary" disabled={cartItems.length === 0}>
+              <Link  to="/detail2"  className="btn btn-primary" disabled={cartItems.length === 0}>
                 Commander
-              </button>
+              </Link>
             </div>
           </div>
         </div>

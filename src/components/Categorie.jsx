@@ -108,7 +108,7 @@ const Categorie = () => {
                 <div className="card-body">
                   <h5 className="card-title">Product {imageIndex}</h5>
                   <p className="fw-bold text-success mb-2">
-                    Price: {(20 + imageIndex).toFixed(2)} $
+                    Price:  ${(20 + imageIndex).toFixed(2)}
                   </p>
                   <div className="d-flex justify-content-center">
                     <button

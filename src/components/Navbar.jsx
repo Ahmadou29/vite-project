@@ -31,13 +31,13 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto me-5 nav1">
+          <div className="collapse navbar-collapse  d-flex justify-content-center text-center " id="navbarSupportedContent">
+            <ul className="navbar-nav   nav1">
               <li className="nav-item">
                 <Link className="nav-link active fs-5" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fs-5" to="/blog">Blog</Link>
+                <Link className="nav-link fs-5" to="/tabsShop">Blog</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link fs-5" to="/categorie">Categorie</Link>
@@ -45,12 +45,12 @@ const Navbar = () => {
             </ul>
           </div>
           <form className="d-flex" role="search">
-            <input
+            {/* <input
               className="form-control me-3"
               type="search"
               placeholder="Search"
               aria-label="Search"
-            />
+            /> */}
           </form>
           <Link className="nav-link me-3 fs-5" to="/login">
                     
