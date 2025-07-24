@@ -3,9 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './TableShop.css';
 
 import image1 from '../assets/images/accessories/accessoire-1.jpg';
-import image2 from '../assets/images/accessories/accessoire-2.jpg';
-import image3 from '../assets/images/accessories/accessoire-3.jpg';
-import image4 from '../assets/images/accessories/accessoire-4.jpg';
 import image5 from '../assets/images/accessories/accessoire-5.jpg';
 
 import image16 from '../assets/images/accessories/accessoire-6.jpg';
@@ -82,8 +79,8 @@ const tabs = [
 
 const fashionItems = [
 { img: image1, },
-{ img: image2, texte: 25 },
-{ img: image3, texte: 25 },
+// { img: image2, texte: 25 },
+// { img: image3, texte: 25 },
 { img: image4, texte: 25 },
 { img: image5, texte: 25 },
 
@@ -424,7 +421,7 @@ oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessories/accessoire-17.jpg",
+img: "",
 newPrice: 10,
 oldPrice: 15.5,
 },
