@@ -1,0 +1,71 @@
+
+    body {
+      background-color: white;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .search-container {
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    .search-box {
+      position: relative;
+
+    }
+
+    .search-box input {
+      padding-left: 40px;
+      height: 45px;
+      border: none;
+      border-bottom: 2px solid grey;
+      border-radius: none;
+
+    }
+
+    .search-box .bi-search {
+      position: absolute;
+      top: 25%;
+      left: 12px;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: #999;
+    }
+    .search-box .bi-x {
+      position: absolute;
+      top: 25%;
+      right: 12px;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: black;
+      font-size: 20px;
+    }
+
+    .keywords {
+      margin-top: 30px;
+    }
+
+    .keywords button {
+      margin: 5px;
+      border-radius: 20px;
+      /* margin-top: 30px; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* gap: 5px; */
+    }
+
+    /* recherche.css */
+/* 
+.search-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.search-box {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  padding: 1rem;
+  border-radius: 10px;
+} */

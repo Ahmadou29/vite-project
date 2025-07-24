@@ -1,0 +1,51 @@
+
+    .brand {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .header-icons i {
+      font-size: 1.2rem;
+      /* margin-left: 10px; */
+    }
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .grid-products img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  hr{
+     width: 10%;
+  margin: auto;
+  border: 1px solid gray;
+  }
+
+.last input{
+    border-bottom: 2px solid gray;
+    border: none;
+}
+.p-input{
+  border-bottom: 1px solid gray;
+}
+
+
+
+/* style.css */
+
+img {
+  border-radius: 10px;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+/* Classe pour la pagination */
+.pagination-button {
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+/* Autres styles globaux ici */
