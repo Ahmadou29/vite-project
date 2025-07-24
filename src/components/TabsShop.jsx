@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './TableShop.css';
 
-import image1 from '../assets/images/accessoires/accessoire-1.jpg';
-import image2 from '../assets/images/accessoires/accessoire-2.jpg';
-import image3 from '../assets/images/accessoires/accessoire-3.jpg';
-import image4 from '../assets/images/accessoires/accessoire-4.jpg';
-import image5 from '../assets/images/accessoires/accessoire-5.jpg';
+import image1 from '../assets/images/accessories/accessoire-1.jpg';
+import image2 from '../assets/images/accessories/accessoire-2.jpg';
+import image3 from '../assets/images/accessories/accessoire-3.jpg';
+import image4 from '../assets/images/accessories/accessoire-4.jpg';
+import image5 from '../assets/images/accessories/accessoire-5.jpg';
 
-import image16 from '../assets/images/accessoires/accessoire-6.jpg';
-import image17 from '../assets/images/accessoires/accessoire-7.jpg';
-import image18 from '../assets/images/accessoires/accessoire-8.jpg';
-import image19 from '../assets/images/accessoires/accessoire-9.jpg';
-import image20 from '../assets/images/accessoires/accessoire-10.jpg';
+import image16 from '../assets/images/accessories/accessoire-6.jpg';
+import image17 from '../assets/images/accessories/accessoire-7.jpg';
+import image18 from '../assets/images/accessories/accessoire-8.jpg';
+import image19 from '../assets/images/accessories/accessoire-9.jpg';
+import image20 from '../assets/images/accessories/accessoire-10.jpg';
 
 import image6 from '../assets/images/femmes/femme-1.jpg';
 import image7 from '../assets/images/femmes/femme-2.jpg';
@@ -388,43 +388,43 @@ oldPrice: 15.5,
 
 
 {
-img: "src/assets/images/accessoires/accessoire-11.jpg",
+img: "src/assets/images/accessories/accessoire-11.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-12.jpg",
+img: "src/assets/images/accessories/accessoire-12.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-13.jpg",
+img: "src/assets/images/accessories/accessoire-13.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-14.jpg",
+img: "src/assets/images/accessories/accessoire-14.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-15.jpg",
+img: "src/assets/images/accessories/accessoire-15.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-16.jpg",
+img: "src/assets/images/accessories/accessoire-16.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
 
 {
-img: "src/assets/images/accessoires/accessoire-17.jpg",
+img: "src/assets/images/accessories/accessoire-17.jpg",
 newPrice: 10,
 oldPrice: 15.5,
 },
@@ -618,18 +618,18 @@ const lookbookItems = [
 {img: "src/assets/images/homme/homme-17.jpg",},
 {img: "src/assets/images/homme/homme-1.jpg",},
 {img: "src/assets/images/homme/homme-19.jpg",},
-{img: "src/assets/images/accessoires/accessoire-7.jpg",},
-{img: "src/assets/images/accessoires/accessoire-1.jpg",},
+{img: "src/assets/images/accessories/accessoire-7.jpg",},
+{img: "src/assets/images/accessories/accessoire-1.jpg",},
 {img: "src/assets/images/homme/homme-10.jpg",},
-{img: "src/assets/images/accessoires/accessoire-11.jpg",},
-{img: "src/assets/images/accessoires/accessoire-8.jpg",},
+{img: "src/assets/images/accessories/accessoire-11.jpg",},
+{img: "src/assets/images/accessories/accessoire-8.jpg",},
 {img: "src/assets/images/homme/homme-16.jpg",},
 {img: "src/assets/images/lunette/lunette-12.jpg",},
 {img: "src/assets/images/lunette/lunette-13.jpg",},
 {img: "src/assets/images/lunette/lunette-14.jpg",},
 {img: "src/assets/images/lunette/lunette-1.jpg",},
-{img: "src/assets/images/accessoires/accessoire-10.jpg",},
-{img: "src/assets/images/accessoires/accessoire-12.jpg",},
+{img: "src/assets/images/accessories/accessoire-10.jpg",},
+{img: "src/assets/images/accessories/accessoire-12.jpg",},
 {img: "src/assets/images/homme/homme-20.jpg",},
 {img: "src/assets/images/femmes/femme-19.jpg",},
 {img: "src/assets/images/femmes/femme-10.jpg",},
@@ -637,10 +637,10 @@ const lookbookItems = [
 {img: "src/assets/images/homme/homme-2.jpg",},
 {img: "src/assets/images/femmes/femme-17.jpg",},
 {img: "src/assets/images/montre/montre-2.jpg",},
-{img: "src/assets/images/accessoires/accessoire-13.jpg",},
+{img: "src/assets/images/accessories/accessoire-13.jpg",},
 {img: "src/assets/images/homme/homme-17.jpg",},
 {img: "src/assets/images/montre/montre-10.jpg",},
-{img: "src/assets/images/accessoires/accessoire-14.jpg",},
+{img: "src/assets/images/accessories/accessoire-14.jpg",},
 {img: "src/assets/images/montre/montre-12.jpg",},
 {img: "src/assets/images/montre/montre-5.jpg",},
 {img: "src/assets/images/montre/montre-4.jpg",},
@@ -720,7 +720,7 @@ role="tabpanel"
 aria-labelledby="fashion-tab"
 >
 <div className="row">
-{fashionItems.map(({ img, texte }, idx) => (
+{fashionItems.map(({ img }, idx) => (
 <div key={idx} className="col-md-3 py-3">
 <div className="card shadow-lg p-3">
 <a href="#">
@@ -768,7 +768,7 @@ role="tabpanel"
 aria-labelledby="lookbook-tab"
 >
 <div className="row">
-{lookbookItems.map(({ img, texte }, idx) => (
+{lookbookItems.map(({ img }, idx) => (
 
 <div key={idx} className="card col-md-3 py-3">
 <a href="#">
@@ -790,6 +790,3 @@ aria-labelledby="lookbook-tab"
 );
 }
 
-
-
-// export default EcommerceFashion;
