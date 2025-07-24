@@ -3,7 +3,7 @@ import './home.css';
 import { Link } from "react-router-dom";
 
 import logo from "../assets/images/logo-removebg-preview (1).png";
-import imgFemme10 from "../assets/images/femme (10).jpg";
+import imgFemme10 from "../assets/images/femmes/femme-10.jpg";
 import imgHomme9 from "../assets/images/homme 9.jpg";
 import imgFemme16 from "../assets/images/femme 2 (16).jpg";
 import imgFemme2_2 from "../assets/images/femme 2 (2).jpeg";

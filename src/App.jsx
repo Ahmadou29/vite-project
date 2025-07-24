@@ -17,6 +17,8 @@ import AdminDashboard from './components/AdminDashboard.jsx'
 import Footer from './components/Footer';
 
 import './App.css';
+import "./components/TableShop.css";
+ import TabsShop from './components/TabsShop';
 
 function App() {
   const location = useLocation();
