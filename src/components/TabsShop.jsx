@@ -334,7 +334,7 @@ oldPrice: 15.5,
 {
 img: "src/assets/images/femmes/femme-28.jpg",
 newPrice: 10,
-oldPrice: 15.5,
+oldPrice: 15.20,
 },
 
 {
