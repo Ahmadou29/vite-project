@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Detail2.css'; // fichier CSS séparé
+import './Detail2.css';
 
 const Detail2 = () => {
   // état

@@ -13,7 +13,7 @@ export default function AjouterProduit() {
       await addDoc(collection(db, "produits"), {
         produit,
         nom,
-        prix: Number(prix),
+        Prix: Number(prix),
         createdAt: new Date()
       });
       alert("Produit ajouté avec succès !");
