@@ -16,7 +16,7 @@ import Detail2 from './components/Detail2.jsx';
 import ModePayement from './components/modepayement.jsx';
 import AdminDashboard from './components/AdminDashboard.jsx'
 import Footer from './components/Footer';
-
+import  "./components/Detail2.css";
 import './App.css';
 import "./components/TableShop.css";
 
