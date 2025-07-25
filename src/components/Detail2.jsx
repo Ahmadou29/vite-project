@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './Detail2.css';
+// import './Detail2.css';
+import  "./components/Detail2.css";
 
 const Detail2 = () => {
   // état
